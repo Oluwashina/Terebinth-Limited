@@ -32,7 +32,7 @@ export default function HeroSection({
   buttons = [],
 }: HeroSectionProps) {
   return (
-    <section className="relative w-full h-screen min-h-150 overflow-hidden">
+    <section className="relative w-full h-screen min-h-150 overflow-hidden rounded-b-[50px]">
       {/* Background Image */}
       <Image
         src={imageSrc}
