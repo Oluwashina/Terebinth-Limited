@@ -27,8 +27,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-6 left-0 right-0 z-50 max-w-7xl md:mx-auto mx-6 rounded-full bg-[#FFFFFFF2] border-[0.8px] border-[#E5E7EB] shadow-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+    <nav className="hidden md:block fixed top-0 md:top-6 left-0 right-0 z-50 max-w-7xl md:mx-auto mx-0 rounded-full md:bg-[#FFFFFFF2] bg-[#FAF8F4] border-[0.8px] border-[#E5E7EB] shadow-md">
+      <div className="md:max-w-6xl md:mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link href="/">
@@ -56,13 +57,23 @@ export default function Navbar() {
           <button className="hidden md:block text-sm bg-[#AD9451] cursor-pointer text-white px-6 py-3 rounded-full hover:bg-[#8B6D3C] transition">
             Get a Callback
           </button>
+        </div>
+        </div>
+      </nav>
 
+      {/* Mobile Navbar Header */}
+      <nav className="md:hidden fixed top-0 left-0 right-0 z-50 bg-[#FAF8F4] border-b-[1.1px] border-[#AD9551] rounded-full">
+        <div className="flex justify-between items-center h-16 px-6">
+          {/* Logo */}
+          <Link href="/">
+            <Image src={logo} alt="Terebinth Limited Logo" className="h-30 w-auto" />
+          </Link>
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-slate-800"
+            className="text-2xl font-bold text-[#1F2933]"
           >
-            <svg
+             <svg
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -77,29 +88,38 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-
+      </nav>
+       
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={`block py-2 text-sm font-lato transition ${
-                  isActive(item.href)
-                    ? 'text-[#AD9551]'
-                    : 'text-[#6B7280] hover:text-[#AD9551]'
-                }`}
+          <div className="md:hidden fixed top-0 left-0 right-0 bg-[#FAF8F4] z-40">
+            {/* Navigation Items */}
+            <div className="px-6 py-6 mt-16 space-y-5">
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`block text-sm font-lato transition ${
+                    isActive(item.href)
+                      ? 'text-[#AD9551] font-semibold'
+                      : 'text-[#6B7280] hover:text-[#AD9551]'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+
+              {/* Enquire Button */}
+              <button
+                onClick={() => setIsOpen(false)}
+                className="w-full mt-2 bg-[#AD9451] text-white text-sm py-4 rounded-full hover:bg-[#8B6D3C] transition font-medium"
               >
-                {item.label}
-              </Link>
-            ))}
-            <button className="w-full mt-4 bg-[#AD9451] text-white py-2 rounded-full hover:bg-[#8B6D3C] transition">
-              Get a Callback
-            </button>
+                Enquire Now
+              </button>
+            </div>
           </div>
         )}
-      </div>
-    </nav>
+    </>
   );
 }

@@ -15,10 +15,13 @@ import heartIcon from '@/assets/icons/heart.svg';
 import medalIcon from '@/assets/icons/medal.svg';
 import trendIcon from '@/assets/icons/trend.svg';
 import shieldIcon from '@/assets/icons/shield.svg';
+import locationIcon from '@/assets/icons/map.svg';
 import personIcon from '@/assets/icons/person.svg';
 import CareHomesSection from "@/components/CareHomesSection";
 import AboutSection from "@/components/AboutSection";
 import ValuesSection from "@/components/ValuesSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 export default function Home() {
 
   const careHomes = [
@@ -63,7 +66,7 @@ export default function Home() {
     }
   ];
 
-    const values = [
+  const values = [
     {
       icon: heartIcon,
       title: 'Dignity',
@@ -95,6 +98,75 @@ export default function Home() {
       description: 'Continuously reviewing our practices, acting on feedback, and striving to deliver the highest quality of care.'
     },
   ];
+
+    const whyChooseUsFeatures = [
+    {
+      icon: locationIcon,
+      title: 'Local and Accessible',
+      description: 'As a Fylde Coast provider, we understand the communities we serve and the importance of care that feels personal and close to home.'
+    },
+    {
+      icon: personIcon,
+      title: 'Residential Care with a Personal Approach',
+      description: 'We believe care should be shaped around the individual, with attention to comfort, dignity and day-to-day wellbeing.'
+    },
+    {
+      icon: heartIcon,
+      title: 'Warm, Respectful Environments',
+      description: 'Our aim is to create homes where residents feel settled, supported and valued.'
+    },
+    {
+      icon: shieldIcon,
+      title: 'Clear Leadership and Oversight',
+      description: 'We value accountable management, dependable systems and a well-led care environment.'
+    },
+    {
+      icon: checkboxIcon,
+      title: 'Family Reassurance',
+      description: 'We understand that families want confidence as well as care. Our approach is designed to provide both.'
+    },
+    {
+      icon: medalIcon,
+      title: 'Commitment to Quality',
+      description: 'We focus on building services that combine compassion with professionalism and continuous improvement.'
+    },
+  ];
+
+  const testimonials = [
+    {
+      id: '1',
+      quote: 'The staff at Watson House treated my mother with such dignity and respect. We felt completely at ease knowing she was in safe, caring hands from day one.',
+      author: 'Paula M.',
+      role: 'Daughter of Resident',
+      initials: 'PM',
+      rating: 5,
+    },
+    {
+      id: '2',
+      quote: 'The warm, caring environment at Watson made such a difference to our father. Staff genuinely understood what person-centred care means in practice.',
+      author: 'James A.',
+      role: 'Son of Resident',
+      initials: 'JA',
+      rating: 5,
+    },
+    {
+      id: '3',
+      quote: 'The staff at Redbrick House treated my mother with such dignity and respect. We felt completely at ease knowing she was in safe, caring hands from day one.',
+      author: 'Susan O.',
+      role: 'Son of Resident',
+      initials: 'SO',
+      rating: 5,
+    },
+    {
+      id: '4',
+      quote: 'The warm, caring environment at Watson made such a difference to our father. Staff genuinely understood what person-centred care means in practice.',
+      author: 'Stewart W.',
+      role: 'Son of Resident',
+      initials: 'SW',
+      rating: 5,
+    },
+  ];
+
   
   return (
     <div>
@@ -147,6 +219,27 @@ export default function Home() {
       />
 
       <ValuesSection values={values} />
+
+        <WhyChooseUsSection
+        label="Why Choose Us"
+        title="Why Families Choose Terebinth Limited"
+        subtitle="Choosing care is a significant decision. We aim to make that decision easier by providing homes that combine warmth, structure and a clear commitment to respectful support."
+        features={whyChooseUsFeatures}
+        buttons={[
+          {
+            label: 'Speak to Our Team',
+            href: '/contact',
+            variant: 'solid',
+          },
+          {
+            label: 'Make Enquiry',
+            href: '/contact',
+            variant: 'outline',
+          },
+        ]}
+      />
+
+      <TestimonialsSection testimonials={testimonials} />
 
       <CTASection
         title="Talk to Us About Care For Your Loved Ones"

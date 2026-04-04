@@ -29,9 +29,9 @@ export default function ValuesSection({ values }: ValuesSectionProps) {
         </div>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-6">
           {values.map((value, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg hover:shadow-lg transition">
+            <div key={index} className="bg-white p-6 md:p-8 md:rounded-lg hover:shadow-lg transition md:border-none border-[1.1px] border-[#E5E7EB]">
               {/* Icon */}
               <div className="mb-6">
                 <div className="bg-[#F0E8D5] w-10 h-10 rounded-full flex justify-center items-center">
