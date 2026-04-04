@@ -1,7 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import HeroImage from '@/assets/images/hero-image.jpg'
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import StatsSection from "@/components/StatsSection";
 import { StaticImageData } from 'next/image';
@@ -22,8 +20,11 @@ import AboutSection from "@/components/AboutSection";
 import ValuesSection from "@/components/ValuesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-export default function Home() {
 
+
+
+export default function Home() {
+  
   const careHomes = [
     {
       id: 'redbricks',
@@ -169,8 +170,7 @@ export default function Home() {
 
   
   return (
-    <div>
-      <Navbar />
+    <>
       <HeroSection
         imageSrc={HeroImage}
         imageAlt="Terebinth Limited care home"
@@ -194,7 +194,6 @@ export default function Home() {
           },
         ]}
       />
-
       <StatsSection
         stats={[
           { number: '3', label: 'Care Homes' },
@@ -257,7 +256,6 @@ export default function Home() {
           },
         ]}
       />
-      <Footer />
-    </div>
+    </>
   );
 }
