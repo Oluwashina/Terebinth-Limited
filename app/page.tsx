@@ -24,7 +24,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 
 
 export default function Home() {
-  
+
   const careHomes = [
     {
       id: 'redbricks',
@@ -211,13 +211,21 @@ export default function Home() {
       <CareHomesSection homes={careHomes} />
       <AboutSection
         image={aboutImage}
+        label="About Us"
         title="A Trusted Local Care Provider"
-        description="Terebinth Limited operates residential care services across the Fylde Coast. We are committed to safe, respectful and person-centred care that prioritises dignity, wellbeing, and quality of life for every resident and their family."
+        descriptions={[
+          "Terebinth Limited operates residential care services across the Fylde Coast. We are committed to safe, respectful and person-centred care that prioritises dignity, wellbeing, and quality of life for every resident and their family."
+        ]}
         buttonLabel="Read More"
         buttonHref="/about"
       />
 
-      <ValuesSection values={values} />
+      <ValuesSection 
+        label="Our Values"
+        title="What Drives Our Care"
+        subtitle="These values guide everything we do and shape the culture of care across all our homes."
+        values={values}
+       />
 
         <WhyChooseUsSection
         label="Why Choose Us"

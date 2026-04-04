@@ -4,7 +4,12 @@ import Link from 'next/link';
 export interface AboutSectionProps {
   image: StaticImageData;
   title: string;
-  description: string;
+  descriptions: string[];
+  label: string;
+  imageButton?: {
+    label: string;
+    href?: string;
+  };
   buttonLabel?: string;
   buttonHref?: string;
 }
@@ -12,7 +17,9 @@ export interface AboutSectionProps {
 export default function AboutSection({
   image,
   title,
-  description,
+  label,
+  descriptions,
+  imageButton,
   buttonLabel = 'Read More',
   buttonHref = '#',
 }: AboutSectionProps) {
@@ -28,19 +35,38 @@ export default function AboutSection({
               fill
               className="object-cover"
             />
+            {imageButton && (
+              <Link
+                href={imageButton.href || '#'}
+                className="absolute md:bottom-5 bottom-4 left-4 bg-[#AD9451] text-white px-4 py-3 text-sm rounded-full font-medium hover:bg-[#8B6D3C] transition"
+              >
+                {imageButton.label}
+              </Link>
+            )}
           </div>
 
           {/* Content */}
           <div className="order-1 lg:order-2">
             <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
-              About Us
+              {label}
             </p>
             <h2 className="text-3xl sm:text-3xl lg:text-4xl max-w-xs font-bold text-[#1F2933] mb-6 leading-tight">
               {title}
             </h2>
-            <p className="text-[#6B7280] mb-6 max-w-md leading-relaxed text-sm sm:text-[15px]">
-              {description}
-            </p>
+              
+            {/* 3 Description Layers */}
+            <div className="space-y-4 mb-6">
+              {descriptions.map((desc, index) => (
+                <p
+                  key={index}
+                  className="text-[#6B7280] max-w-lg leading-relaxed text-sm sm:text-[15px]"
+                >
+                  {desc}
+                </p>
+              ))}
+            </div>
+
+           
             <Link
               href={buttonHref}
               className="inline-block bg-[#AD9451] text-white px-10 py-4 text-sm rounded-full font-medium hover:bg-[#8B6D3C] transition"

@@ -8,23 +8,26 @@ export interface ValueCard {
 }
 
 export interface ValuesSectionProps {
+  label: string;
+  title: string;
+  subtitle: string;
   values: ValueCard[];
 }
 
-export default function ValuesSection({ values }: ValuesSectionProps) {
+export default function ValuesSection({ label, title, subtitle, values }: ValuesSectionProps) {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9551] mb-3">
-            Our Values
+            {label}
           </p>
           <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-3 leading-tight">
-            What Drives Our Care
+            {title}
           </h2>
           <p className="text-[#6B7280] max-w-lg mx-auto text-base sm:text-lg leading-relaxed">
-            These values guide everything we do and shape the culture of care across all our homes.
+            {subtitle}
           </p>
         </div>
 
