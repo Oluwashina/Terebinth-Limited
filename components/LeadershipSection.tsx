@@ -50,7 +50,7 @@ export default function LeadershipSection({
                 key={index}
                 className="border-l-[2.4px] border-r-[0.8px] border-b-[0.8px] border-t-[0.8px] bg-[#FFFFFF] border-[#AD9451] p-4 sm:p-6 rounded-tr-xs rounded-br-xs hover:shadow-md transition"
               >
-                <h3 className="text-sm sm:text-xl font-semibold text-[#1F2933] mb-3">
+                <h3 className="text-sm sm:text-base font-semibold text-[#1F2933] mb-3">
                   {item.title}
                 </h3>
                 <p className="text-[#6B7280] text-sm leading-relaxed">
