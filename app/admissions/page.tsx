@@ -167,7 +167,7 @@ export default function AdmissionsPage() {
             },
             {
             label: 'View Our Homes',
-            href: '#homes',
+            href: '/our-homes',
                 variant: 'outline',
                 },
             ]}

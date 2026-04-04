@@ -259,7 +259,7 @@ export default function Home() {
           },
           {
             label: 'View Our Homes',
-            href: '#homes',
+            href: '/our-homes',
             variant: 'outline',
           },
         ]}

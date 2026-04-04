@@ -42,6 +42,8 @@ export default function AdmissionStepsSection({
               src={image}
               alt="Admission process"
               fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

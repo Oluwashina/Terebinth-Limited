@@ -42,6 +42,8 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
                   src={home.image}
                   alt={home.name}
                   fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
