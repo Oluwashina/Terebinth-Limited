@@ -19,7 +19,9 @@ export default function OurHomesPage() {
      <HeroSection
         imageSrc={homesHeroImage}
         imageAlt="Our Homes - Three Welcoming Homes Across the Fylde Coast"
-        badge="OUR LOCATIONS"
+        badges={[
+            'OUR LOCATIONS'
+        ]}
         titleSegments={[
           { text: 'Three ', isHighlighted: false },
           { text: 'Welcoming Homes Across ', isHighlighted: true },
@@ -48,7 +50,7 @@ export default function OurHomesPage() {
             { text: "Family visits welcomed at all times" }
         ]}
         viewButtonLabel="View Watson"
-        viewButtonHref="/homes/watson-house"
+        viewButtonHref="/our-homes/watson-house"
         bookButtonLabel="Book A Visit"
         bookButtonHref="/book-visit?home=watson"
         />
@@ -71,7 +73,7 @@ export default function OurHomesPage() {
                 { text: "Community connections and outings" }
             ]}
             viewButtonLabel="View Redbricks"
-            viewButtonHref="/homes/redbricks"
+            viewButtonHref="/our-homes/redbricks"
             bookButtonLabel="Book a Visit"
             bookButtonHref="/book-visit?home=redbricks"
             imagePosition="right"
@@ -96,7 +98,7 @@ export default function OurHomesPage() {
                 { text: "Responsive, person-centred approach" }
             ]}
             viewButtonLabel="View Mariners"
-            viewButtonHref="/homes/mariners-court"
+            viewButtonHref="/our-homes/mariners-court"
             bookButtonLabel="Book a Visit"
             bookButtonHref="/book-visit?home=mariners"
             imagePosition="left"

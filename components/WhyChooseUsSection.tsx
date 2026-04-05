@@ -17,6 +17,8 @@ export interface WhyChooseUsSectionProps {
     href: string;
     variant?: 'solid' | 'outline';
   }>;
+  gridCols?: 'md:grid-cols-2' | 'md:grid-cols-2 lg:grid-cols-3';
+  gap?: string;
 }
 
 export default function WhyChooseUsSection({
@@ -25,16 +27,18 @@ export default function WhyChooseUsSection({
   subtitle,
   features,
   buttons = [],
+  gridCols = 'md:grid-cols-2 lg:grid-cols-3',
+  gap = 'gap-0 lg:gap-6',
 }: WhyChooseUsSectionProps) {
   return (
     <section className="bg-[#FAF8F4] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
-          <h2 className="text-2xl max-w-lg mx-auto sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
+          <h2 className="text-2xl max-w-xl mx-auto sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
             {title}
           </h2>
           <p className="text-[#6B7280] max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
@@ -43,7 +47,7 @@ export default function WhyChooseUsSection({
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-6 mb-12">
+        <div className={`grid grid-cols-1 ${gridCols} ${gap}`}>
           {features.map((feature, index) => (
             <div
               key={index}
@@ -67,7 +71,7 @@ export default function WhyChooseUsSection({
               </h3>
 
               {/* Description */}
-              <p className="text-[#6B7280] leading-relaxed text-sm max-w-xs">
+              <p className="text-[#6B7280] leading-relaxed text-sm max-w-sm">
                 {feature.description}
               </p>
             </div>
@@ -76,7 +80,7 @@ export default function WhyChooseUsSection({
 
         {/* Buttons */}
         {buttons.length > 0 && (
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex mt-12 flex-col sm:flex-row justify-center gap-4">
             {buttons.map((button, index) => (
               <Link
                 key={index}

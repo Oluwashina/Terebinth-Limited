@@ -20,7 +20,9 @@ export default function AdmissionsPage() {
      <HeroSection
         imageSrc={admissionsHeroImage}
         imageAlt="Admissions - Finding the Right Care Home"
-        badge="GETTING STARTED"
+        badges={[
+            'GETTING STARTED'
+        ]}
         titleSegments={[
           { text: 'Finding The ', isHighlighted: false },
           { text: 'Right Care Home ', isHighlighted: true },

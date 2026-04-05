@@ -174,7 +174,9 @@ export default function Home() {
       <HeroSection
         imageSrc={HeroImage}
         imageAlt="Terebinth Limited care home"
-        badge="QUALITY CARE ACROSS THE FYLDE COAST"
+        badges={[
+          'QUALITY CARE ACROSS THE FYLDE COAST'
+        ]}
         titleSegments={[
           { text: 'Compassionate ', isHighlighted: false },
           { text: 'Residential Care ', isHighlighted: true },

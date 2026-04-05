@@ -96,7 +96,9 @@ export default function AboutPage() {
       <HeroSection
         imageSrc={aboutHeroImage}
         imageAlt="About Terebinth Limited"
-        badge="ABOUT US"
+        badges={[
+          'ABOUT US'
+        ]}
         titleSegments={[
           { text: 'Caring for ', isHighlighted: false },
           { text: 'Your Loved Ones ', isHighlighted: true },

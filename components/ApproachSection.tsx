@@ -12,6 +12,7 @@ export interface ApproachSectionProps {
   title: string;
   subtitle: string;
   cards: ApproachCard[];
+  gap?: string; // Optional gap between cards, e.g. "gap-6"
 }
 
 export default function ApproachSection({
@@ -19,12 +20,13 @@ export default function ApproachSection({
   title,
   subtitle,
   cards,
+  gap = 'gap-1 lg:gap-1'
 }: ApproachSectionProps) {
   return (
     <section className="bg-[#FAF8F4] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-16">
           <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
@@ -37,7 +39,7 @@ export default function ApproachSection({
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 lg:gap-1">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${gap}`}>
           {cards.map((card, index) => (
             <div
               key={index}

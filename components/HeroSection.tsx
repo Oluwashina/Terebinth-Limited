@@ -17,7 +17,7 @@ export interface HeroButton {
 export interface HeroSectionProps {
   imageSrc: StaticImageData;
   imageAlt: string;
-  badge?: string;
+  badges?: string[];
   titleSegments: TextSegment[];  // Array instead of title/subtitle/additionalText
   description: string;
   buttons?: HeroButton[];
@@ -26,7 +26,7 @@ export interface HeroSectionProps {
 export default function HeroSection({
   imageSrc,
   imageAlt,
-  badge,
+  badges = [],
   titleSegments,
   description,
   buttons = [],
@@ -48,12 +48,19 @@ export default function HeroSection({
       {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-start max-w-7xl mx-auto px-6 md:px-0 pt-24 sm:pt-0">
         <div className="max-w-3xl">
-          {/* Badge */}
-          {badge && (
-        <div className="mb-6 inline-block bg-[#FAF8F4] border-[0.8px] border-[#AD9451] px-4 py-2 rounded-full">
-              <p className="text-[#AD9451] text-sm font-medium text-center uppercase tracking-wide">
-                • {badge}
-              </p>
+          {/* Badges */}
+          {badges.length > 0 && (
+            <div className="mb-6 flex flex-wrap gap-2">
+              {badges.map((badgeText, index) => (
+                <div
+                  key={index}
+                  className="inline-block bg-[#FAF8F4] border-[0.8px] border-[#AD9451] px-4 py-2 rounded-full"
+                >
+                  <p className="text-[#AD9451] text-sm font-medium text-center uppercase tracking-wide">
+                    • {badgeText}
+                  </p>
+                </div>
+              ))}
             </div>
           )}
 
@@ -80,9 +87,9 @@ export default function HeroSection({
               <Link
                 key={index}
                 href={button.href}
-                className={`px-8 py-3 rounded-full font-semibold text-center transition ${
+                className={`px-8 py-3 rounded-full font-medium text-center transition ${
                   button.variant === 'outline'
-                    ? 'border-2 border-[#AD9451] text-[#AD9451] hover:bg-[#AD9451] hover:text-white'
+                    ? 'bg-[#FAF8F4] text-[#AD9451] hover:bg-[#FAF8F4]/90' 
                     : 'bg-[#AD9451] text-white hover:bg-[#8B6D3C]'
                 }`}
               >

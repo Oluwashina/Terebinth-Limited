@@ -9,7 +9,9 @@ export default function ContactPage() {
       <HeroSection
         imageSrc={contactImage}
         imageAlt="Contact us"
-        badge="GET IN TOUCH"
+        badges={[
+          'GET IN TOUCH'
+        ]}
         titleSegments={[
           { text: 'Contact ', isHighlighted: false },
           { text: 'Us', isHighlighted: false },
