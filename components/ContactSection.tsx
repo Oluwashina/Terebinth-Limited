@@ -192,6 +192,7 @@ export default function ContactSection() {
                   <option value="redbricks">Redbricks Care Home (Thornton-Cleveleys)</option>
                   <option value="watson">Watson House Rest Home (Blackpool)</option>
                   <option value="mariners">Mariners Court Care Home (Fleetwood)</option>
+                  <option value="general">General Enquiry</option>
                 </select>
               </div>
 

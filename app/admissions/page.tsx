@@ -166,8 +166,8 @@ export default function AdmissionsPage() {
             variant: 'solid',
             },
             {
-            label: 'View Our Homes',
-            href: '/our-homes',
+            label: 'Arrange an Enquiry',
+            href: '/contact',
                 variant: 'outline',
                 },
             ]}

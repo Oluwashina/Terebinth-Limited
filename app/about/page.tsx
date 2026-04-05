@@ -162,7 +162,7 @@ export default function AboutPage() {
                 variant: 'solid',
               },
               {
-                label: 'View Our Homes',
+                label: 'Discuss care Needs',
                 href: '/our-homes',
                 variant: 'outline',
               },

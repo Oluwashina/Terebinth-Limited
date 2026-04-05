@@ -125,17 +125,15 @@ export default function HomeDetailsSection({
     <section className={`${backgroundColor} py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20`}>
       <div className="max-w-7xl mx-auto">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${imagePosition === 'right' ? 'lg:grid-cols-2' : ''}`}>
-          {imagePosition === 'left' ? (
-            <>
-              {imageCol}
-              {contentCol}
-            </>
-          ) : (
-            <>
-              {contentCol}
-              {imageCol}
-            </>
-          )}
+           {/* Image Column */}
+        <div className={imagePosition === 'right' ? 'lg:order-2' : ''}>
+          {imageCol}
+        </div>
+
+        {/* Content Column */}
+        <div className={imagePosition === 'right' ? 'lg:order-1' : ''}>
+          {contentCol}
+        </div>
         </div>
       </div>
     </section>
