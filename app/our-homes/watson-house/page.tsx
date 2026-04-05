@@ -4,7 +4,6 @@ import mealIcon from '@/assets/icons/meal.svg';
 import activitiesIcon from '@/assets/icons/activities.svg';
 import clockIcon from '@/assets/icons/clock.svg';
 import CareSpecialismsSection from "@/components/CareSpecialismsSection";
-import careImage from '@/assets/images/care-activity.jpg';
 import aboutImage from '@/assets/images/about.jpg';
 import AboutSection from "@/components/AboutSection";
 import LeadershipProfileSection from "@/components/LeadershipProfileSection";

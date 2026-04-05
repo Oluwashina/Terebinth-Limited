@@ -30,10 +30,10 @@ export default function ApproachSection({
           <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
+          <h2 className="text-2xl max-w-md mx-auto sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
             {title}
           </h2>
-          <p className="text-[#6B7280] max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
+          <p className="text-[#6B7280] max-w-xl mx-auto text-sm sm:text-[15px] leading-relaxed">
             {subtitle}
           </p>
         </div>

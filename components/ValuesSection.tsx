@@ -12,11 +12,12 @@ export interface ValuesSectionProps {
   title: string;
   subtitle: string;
   values: ValueCard[];
+  bgColor?: string;
 }
 
-export default function ValuesSection({ label, title, subtitle, values }: ValuesSectionProps) {
+export default function ValuesSection({ label, title, subtitle, values, bgColor = "bg-white" }: ValuesSectionProps) {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
+    <section className={`${bgColor} py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20`}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
@@ -26,7 +27,7 @@ export default function ValuesSection({ label, title, subtitle, values }: Values
           <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-3 leading-tight">
             {title}
           </h2>
-          <p className="text-[#6B7280] max-w-lg mx-auto text-base sm:text-lg leading-relaxed">
+          <p className="text-[#6B7280] max-w-lg mx-auto text-sm sm:text-[15px] leading-relaxed">
             {subtitle}
           </p>
         </div>

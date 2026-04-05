@@ -13,6 +13,7 @@ export interface ContactLocationSectionProps {
     street: string;
     city: string;
     postcode: string;
+    country?: string;
   };
   phone: string;
   email: string;
@@ -66,6 +67,7 @@ export default function ContactLocationSection({
                   {address.name}<br />
                   {address.street}<br />
                   {address.city}<br />
+                  {address.country}<br />
                   {address.postcode}
                 </p>
               </div>
