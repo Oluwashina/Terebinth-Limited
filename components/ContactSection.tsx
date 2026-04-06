@@ -1,13 +1,18 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Image from 'next/image';
 import locationIcon from '@/assets/icons/map.svg';
 import phoneIcon from '@/assets/icons/call.svg';
 import emailIcon from '@/assets/icons/message.svg';
 
 export default function ContactSection() {
+
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: '',
     phoneNumber: '',
@@ -17,6 +22,8 @@ export default function ContactSection() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -28,19 +35,53 @@ export default function ContactSection() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your form submission logic here (API call, email, etc.)
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({
-      fullName: '',
-      phoneNumber: '',
-      email: '',
-      homeOfInterest: '',
-      message: '',
-    });
-    setTimeout(() => setSubmitted(false), 3000);
+    setLoading(true);
+    setError('');
+
+     // Map care home values to display names
+    const homeOfInterestMap: { [key: string]: string } = {
+      redbricks: 'Redbricks Care Home (Thornton-Cleveleys)',
+      watson: 'Watson House Rest Home (Blackpool)',
+      mariners: 'Mariners Court Care Home (Fleetwood)',
+      general: 'General Enquiry',
+    };
+
+      const selectedHome = formData.homeOfInterest 
+      ? homeOfInterestMap[formData.homeOfInterest] || formData.homeOfInterest
+      : 'Not specified';
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          fullName: formData.fullName,
+          phoneNumber: formData.phoneNumber,
+          email: formData.email,
+          homeOfInterest: selectedHome,
+          message: formData.message,
+          to_email: 'enquiries@terebinthltd.com',
+          // to_email: 'shinzbaba@gmail.com',
+        }
+      );
+
+      setSubmitted(true);
+      setFormData({
+        fullName: '',
+        phoneNumber: '',
+        email: '',
+        homeOfInterest: '',
+        message: '',
+      });
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch (err) {
+      setError('Failed to send email. Please try again.');
+      console.error('EmailJS error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -125,6 +166,12 @@ export default function ContactSection() {
                 <p className="text-green-800 text-sm">
                   Thank you for your enquiry. We'll be in touch shortly!
                 </p>
+              </div>
+            )}
+
+             {error && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <p className="text-red-800 text-sm">{error}</p>
               </div>
             )}
 
@@ -215,9 +262,10 @@ export default function ContactSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full text-[15px] bg-[#AD9451] text-white py-4 rounded-full font-medium cursor-pointer hover:bg-[#8B6D3C] transition"
+                disabled={loading}
+                className="w-full text-[15px] bg-[#AD9451] text-white py-4 rounded-full font-medium cursor-pointer hover:bg-[#8B6D3C] transition disabled:opacity-50"
               >
-                Send Enquiry
+                {loading ? 'Sending...' : 'Send Enquiry'}
               </button>
             </form>
 

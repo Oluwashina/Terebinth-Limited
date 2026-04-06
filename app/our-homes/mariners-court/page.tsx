@@ -450,6 +450,7 @@ export default function MarinersCourtPage() {
                 postcode: "FY7 7JL"
             }}
             phone="07960 485280"
+            alternativePhone="01253 872493"
             email="marinerscourt@terebinthltd.com"
             visitExpectation="When you arrange a visit, you'll have the opportunity to tour the home, meet our team, and discuss your specific care needs in detail. We'll take the time to answer all your questions and help you understand how we can support you or your loved one."
             buttonLabel="Discuss Care Needs"

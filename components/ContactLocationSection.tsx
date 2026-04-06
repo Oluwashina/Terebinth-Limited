@@ -16,6 +16,7 @@ export interface ContactLocationSectionProps {
     country?: string;
   };
   phone: string;
+  alternativePhone?: string;
   email: string;
   visitExpectation: string;
   buttonLabel?: string;
@@ -30,6 +31,7 @@ export default function ContactLocationSection({
   description,
   address,
   phone,
+  alternativePhone,
   email,
   visitExpectation,
   buttonLabel = 'Discuss Care Needs',
@@ -83,6 +85,14 @@ export default function ContactLocationSection({
                 <a href={`tel:${phone}`} className="text-[#AD9551] font-medium text-sm sm:text-[15px] hover:underline">
                   {phone}
                 </a>
+                {alternativePhone && (
+                  <>
+                    <br/>
+                    <a href={`tel:${alternativePhone}`} className="text-[#AD9551] font-medium text-sm sm:text-[15px] hover:underline">
+                      {alternativePhone}
+                    </a>
+                  </>
+                )}
               </div>
             </div>
 
