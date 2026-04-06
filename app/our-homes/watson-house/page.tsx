@@ -231,7 +231,8 @@ export default function WatsonHousePage() {
             address={{
                 name: "Watson House Rest Home",
                 street: "50 Station Road",
-                city: "Blackpool Lancashire",
+                city: "Blackpool ",
+                country: "Lancashire",
                 postcode: "FY4 1EU"
             }}
             phone="01253 341550"

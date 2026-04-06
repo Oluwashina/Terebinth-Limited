@@ -69,7 +69,11 @@ export default function ContactLocationSection({
                   {address.name}<br />
                   {address.street}<br />
                   {address.city}<br />
-                  {address.country}<br />
+                  {address.country && (
+                    <>
+                      {address.country}<br />
+                    </>
+                  )}
                   {address.postcode}
                 </p>
               </div>
