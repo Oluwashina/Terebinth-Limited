@@ -215,7 +215,7 @@ export default function RedbricksPage() {
           visitExpectation="When you arrange a visit, you'll have the opportunity to tour the home, meet our team, and discuss your specific care needs in detail. We'll take the time to answer all your questions and help you understand how we can support you or your loved one."
           buttonLabel="Discuss Care Needs"
           buttonHref="/contact"
-          mapEmbedUrl="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL_HERE"
+          mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.6823386498986!2d-3.0517924088128296!3d53.86629640139537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b4355d955f211%3A0xb2bb8180a5b99a7b!2sRedbricks!5e0!3m2!1sen!2sng!4v1775475671041!5m2!1sen!2sng"
           backgroundColor="bg-[#FFFFFF]"
         />
 
