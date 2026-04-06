@@ -1,7 +1,6 @@
 import HeroSection from '@/components/HeroSection';
 import ContactSection from '@/components/ContactSection';
-import CTASection from '@/components/CTASection';
-import contactImage from '@/assets/images/hero-image.jpg'
+import contactImage from '@/assets/images/heroImage.jpg'
 
 export default function ContactPage() {
   return (

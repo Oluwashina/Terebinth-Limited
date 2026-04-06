@@ -1,6 +1,6 @@
 import CTASection from "@/components/CTASection";
 import HeroSection from "@/components/HeroSection";
-import homesHeroImage from '@/assets/images/hero-image.jpg'; 
+import homesHeroImage from '@/assets/images/heroImage.jpg'; 
 import watsonHouseImage from '@/assets/images/watson-house.jpg';
 import redbricksImage from '@/assets/images/redbricks.jpg';
 import HomeDetailsSection from "@/components/HomeDetailsSection";
