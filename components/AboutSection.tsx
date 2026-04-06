@@ -28,7 +28,7 @@ export default function AboutSection({
   bgColor = 'bg-white'
 }: AboutSectionProps) {
   const imageCol = (
-    <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-[20px] overflow-hidden">
+    <div className="relative w-full h-64 sm:h-80 lg:h-120 rounded-[20px] overflow-hidden">
       <Image
         src={image}
         alt="About us"
@@ -50,7 +50,7 @@ export default function AboutSection({
 
   const contentCol = (
     <div>
-      <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
         {label}
       </p>
       <h2 className="text-3xl sm:text-3xl lg:text-4xl max-w-xs font-bold text-[#1F2933] mb-6 leading-tight">

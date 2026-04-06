@@ -25,7 +25,7 @@ export default function GallerySection({
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 lg:mb-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight max-w-md">

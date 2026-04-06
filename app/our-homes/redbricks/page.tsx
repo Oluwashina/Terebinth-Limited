@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import redbricksHeroImage from '@/assets/images/redbricks.jpg'; 
 import AboutSection from "@/components/AboutSection";
-import aboutImage from '@/assets/images/about.jpg';
+import aboutImage from '@/assets/images/redbricks-about.jpg';
 import LeadershipProfileSection from "@/components/LeadershipProfileSection";
 import shola from '@/assets/images/shola-ogunleye.jpg';
 import heartIcon from '@/assets/icons/heart.svg';
@@ -18,6 +18,7 @@ import bathroomImage from '@/assets/images/bathroom.jpg';
 import bedroomArea from '@/assets/images/bedroomArea.jpg';
 import outdoorArea from '@/assets/images/outdoorArea.jpg';
 import ensuiteRoom from '@/assets/images/ensuiteRoom.jpg';
+import redbricksAccomodation from '@/assets/images/redbricks-accomodation.jpg';
 import activitiesArea from '@/assets/images/activitiesArea.jpg';
 import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
 import DailyLifeSection from "@/components/DailyLifeSection";
@@ -114,7 +115,7 @@ export default function RedbricksPage() {
          />
 
            <AboutSection
-            image={aboutImage}
+            image={redbricksAccomodation}
             title="Comfortable Accommodation in Compact Coastal Homes"
             label="ACCOMODATION"
             descriptions={[

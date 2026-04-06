@@ -27,9 +27,9 @@ export default function LeadershipProfileSection({
   return (
     <section className={`${backgroundColor} py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20`}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Profile Image */}
-          <div className="relative w-full h-80 sm:h-96 lg:h-full rounded-[20px] overflow-hidden">
+          <div className="relative w-full h-80 sm:h-96 lg:h-130 rounded-[20px] overflow-hidden">
             <Image
               src={profileImage}
               alt={profileName}
@@ -44,7 +44,7 @@ export default function LeadershipProfileSection({
 
           {/* Right - Content */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
               {label}
             </p>
 

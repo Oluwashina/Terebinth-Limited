@@ -18,12 +18,9 @@ import watsonHeroImage from '@/assets/images/watson-house.jpg';
 import accommodationImg from '@/assets/images/img1.jpg'; 
 import watsonPersonalCareImg from '@/assets/images/watson-personal-care.jpg'; 
 import GallerySection from "@/components/GallerySection";
-import bathroomImage from '@/assets/images/bathroom.jpg';
-import bedroomArea from '@/assets/images/bedroomArea.jpg';
-import outdoorArea from '@/assets/images/outdoorArea.jpg';
-import ensuiteRoom from '@/assets/images/ensuiteRoom.jpg';
-import activitiesArea from '@/assets/images/activitiesArea.jpg';
-import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
+import watsonBedroomArea from '@/assets/images/watson-bedroom-area.jpg';
+import watsonOutdoorArea from '@/assets/images/watson-outdoor-area.jpg';
+import watsonInteriorHallway from '@/assets/images/watson-interior-hallway.jpg';
 import Image from "next/image";
 
 export default function WatsonHousePage() {
@@ -200,28 +197,28 @@ export default function WatsonHousePage() {
           subtitle="Take a closer look at our facilities, communal spaces, and the welcoming, homely environment we've created for our residents."
           images={[
             {
-              src: mainLoungeArea,
+              src: watsonPersonalCareImg,
               label: "Main Lounge & Dining Area"
             },
             {
-              src: activitiesArea,
+              src: watsonInteriorHallway,
               label: "Interior Hallway"
             },
             {
-              src: bathroomImage,
-              label: "Bathroom"
-            },
-            {
-              src: bedroomArea,
+              src: watsonBedroomArea,
               label: "Bedroom Area"
             },
             {
-              src: outdoorArea,
+              src: watsonOutdoorArea,
               label: "Outdoor Area"
             },
             {
-              src: ensuiteRoom,
-              label: "En suite Room"
+              src: watsonOutdoorArea,
+              label: "Outdoor Area"
+            },
+            {
+              src: aboutImage,
+              label: "Outdoor Area"
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

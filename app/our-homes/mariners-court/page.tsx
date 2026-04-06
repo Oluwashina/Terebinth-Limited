@@ -24,12 +24,19 @@ import facilitiesImage2 from '@/assets/images/facilityImage2.jpg';
 import ContactLocationSection from "@/components/ContactLocationSection";
 import Image from "next/image";
 import GallerySection from "@/components/GallerySection";
-import bathroomImage from '@/assets/images/bathroom.jpg';
-import bedroomArea from '@/assets/images/bedroomArea.jpg';
-import outdoorArea from '@/assets/images/outdoorArea.jpg';
-import ensuiteRoom from '@/assets/images/ensuiteRoom.jpg';
-import activitiesArea from '@/assets/images/activitiesArea.jpg';
-import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
+import marinaLoungeArea from '@/assets/images/mariners-lounge-area.jpg';
+import marinaLoungeArea2 from '@/assets/images/mariners-lounge-area2.jpg';
+import marinaDiningArea from '@/assets/images/marina-dining-area.jpg';
+import marinaKitchen from '@/assets/images/marina-kitchen.jpg';
+import marinersKitchen from '@/assets/images/mariners-kitchen.jpg';
+import marinersLakeView from '@/assets/images/mariners-lake-view.jpg';
+import marinersLakeView2 from '@/assets/images/mariners-lake-view2.jpg';
+import marinersGarden from '@/assets/images/mariners-garden.jpg';
+import marinersGarden2 from '@/assets/images/mariners-garden2.jpg';
+import marinersBedroom from '@/assets/images/mariners-bedroom.jpg';
+import marinersBedroom2 from '@/assets/images/mariners-bedroom2.jpg';
+import marinersLounge from '@/assets/images/mariners-lounge.jpg';
+import Link from "next/link";
 
 export default function MarinersCourtPage() {
 
@@ -204,10 +211,13 @@ export default function MarinersCourtPage() {
                     Our experienced care team provides compassionate assistance with all aspects of daily living — personal care, medication management, mobility support, and help with meals. We believe in supporting independence wherever possible while providing reassurance and practical help when needed.
                 </p>
                 </div>
-                
-                <button className="bg-[#AD9451] cursor-pointer hover:bg-[#8B6D3C] text-sm text-white px-8 py-3 rounded-full font-medium transition">
+              
+                 <Link
+                  href="/contact"
+                    className="inline-block bg-[#AD9451] text-white px-8 py-4 text-sm rounded-full font-medium hover:bg-[#8B6D3C] transition"
+                  >
                   Discuss Care Needs
-                </button>
+                </Link>
             </div>
             
             {/* Right Column */}
@@ -294,7 +304,7 @@ export default function MarinersCourtPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column */}
             <div>
-                <p className="text-[#AD9451] text-sm font-semibold uppercase tracking-wider mb-4">
+                <p className="text-[#AD9451] text-xs font-semibold uppercase tracking-wider mb-4">
                 Accommodation & Facilities
                 </p>
                 
@@ -376,40 +386,52 @@ export default function MarinersCourtPage() {
           subtitle="Take a closer look at our facilities, communal spaces, and the welcoming, homely environment we've created for our residents."
           images={[
             {
-              src: mainLoungeArea,
-              label: "Main Lounge & Dining Area"
+              src: marinaLoungeArea,
+              label: "Lounge  Area"
             },
             {
-              src: activitiesArea,
-              label: "Interior Hallway"
+              src: marinaDiningArea,
+              label: "Dining Area"
             },
             {
-              src: bathroomImage,
-              label: "Bathroom"
+              src: marinaKitchen,
+              label: "Kitchen"
             },
              {
-              src: mainLoungeArea,
-              label: "Main Lounge & Dining Area"
+              src: marinaLoungeArea2,
+              label: "Lounge Area"
             },
             {
-              src: activitiesArea,
-              label: "Interior Hallway"
+              src: marinersLakeView,
+              label: "Lake View From Bedroom"
             },
             {
-              src: bathroomImage,
-              label: "Bathroom"
+              src: marinersGarden,
+              label: "Garden"
             },
             {
-              src: bedroomArea,
-              label: "Bedroom Area"
+              src: marinersLakeView2,
+              label: "Lake View From Bedroom"
             },
             {
-              src: outdoorArea,
-              label: "Outdoor Area"
+              src: marinersBedroom,
+              label: "Bedroom"
             },
             {
-              src: ensuiteRoom,
-              label: "En suite Room"
+              src: marinersKitchen,
+              label: "Kitchen"
+            },
+            {
+              src: marinersGarden2,
+              label: "Garden"
+            },
+            {
+              src: marinersLounge,
+              label: "Lounge"
+            },
+            {
+              src: marinersBedroom2,
+              label: "Bedroom"
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

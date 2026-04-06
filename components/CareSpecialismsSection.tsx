@@ -39,7 +39,7 @@ export default function CareSpecialismsSection({
 
   const contentCol = (
     <div>
-      <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
         {label}
       </p>
 
