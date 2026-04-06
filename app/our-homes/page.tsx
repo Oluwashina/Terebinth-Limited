@@ -27,7 +27,7 @@ export default function OurHomesPage() {
           { text: 'Welcoming Homes Across ', isHighlighted: true },
           { text: 'the Fylde Coast', isHighlighted: false },
         ]}
-        description="Each home provides safe, respectful and person-centred residential care in a warm, well-managed environment."
+        description="Terebinth Limited operates residential care services across the Fylde Coast. Our homes are intended to provide supportive, respectful and well-managed environments where residents feel safe, comfortable and valued."
         buttons={[]}
       />
 
@@ -51,8 +51,8 @@ export default function OurHomesPage() {
         ]}
         viewButtonLabel="View Watson"
         viewButtonHref="/our-homes/watson-house"
-        bookButtonLabel="Book A Visit"
-        bookButtonHref="/book-visit?home=watson"
+        bookButtonLabel="Arrange A Visit"
+        bookButtonHref="/contact"
         />
 
         <HomeDetailsSection 
@@ -74,8 +74,8 @@ export default function OurHomesPage() {
             ]}
             viewButtonLabel="View Redbricks"
             viewButtonHref="/our-homes/redbricks"
-            bookButtonLabel="Book a Visit"
-            bookButtonHref="/book-visit?home=redbricks"
+            bookButtonLabel="Arrange A Visit"
+            bookButtonHref="/contact"
             imagePosition="right"
             backgroundColor="bg-[#FAF8F4]"
          />
@@ -99,8 +99,8 @@ export default function OurHomesPage() {
             ]}
             viewButtonLabel="View Mariners"
             viewButtonHref="/our-homes/mariners-court"
-            bookButtonLabel="Book a Visit"
-            bookButtonHref="/book-visit?home=mariners"
+            bookButtonLabel="Arrange A Visit"
+            bookButtonHref="/contact"
             imagePosition="left"
             backgroundColor="bg-white"
             />
@@ -145,7 +145,7 @@ export default function OurHomesPage() {
         />
 
     <CTASection
-        title="Talk to Us About Care For Your Loved Ones"
+        title="Speak to Us About Our Homes"
         description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
         buttons={[
           {

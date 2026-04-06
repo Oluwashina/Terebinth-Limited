@@ -9,22 +9,22 @@ export default function Footer() {
 
   const quickLinks = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '#about' },
-    { label: 'Our Homes', href: '#homes' },
-    { label: 'Admissions', href: '#admissions' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'About', href: '/about' },
+    { label: 'Our Homes', href: '/our-homes' },
+    { label: 'Admissions', href: '/admissions' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   const ourHomes = [
-    { label: 'Watson House', href: '#' },
-    { label: 'Redbricks', href: '#' },
-    { label: 'Mariners Court', href: '#' },
+    { label: 'Watson House', href: '/our-homes/watson-house' },
+    { label: 'Redbricks', href: '/our-homes/redbricks' },
+    { label: 'Mariners Court', href: '/our-homes/mariners-court' },
   ];
 
   const company = [
-    { label: 'About', href: '#about' },
-    { label: 'Our Homes', href: '#homes' },
-    { label: 'Admissions', href: '#admissions' },
+    { label: 'About', href: '/about' },
+    { label: 'Our Homes', href: '/our-homes' },
+    { label: 'Admissions', href: '/admissions' },
   ];
 
   return (

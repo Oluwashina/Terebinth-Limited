@@ -37,7 +37,7 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
           {homes.map((home) => (
             <div key={home.id} className="flex flex-col h-full">
               {/* Image */}
-              <div className="relative w-full h-48 sm:h-56 mb-6 rounded-[20px] overflow-hidden">
+              <div className="relative w-full h-48 sm:h-65 mb-6 rounded-[20px] overflow-hidden">
                 <Image
                   src={home.image}
                   alt={home.name}
@@ -62,7 +62,7 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-[#6B7280] mb-4 leading-relaxed">
+                <p className="text-sm text-[#6B7280] mb-4 leading-relaxed max-w-xs">
                   {home.description}
                 </p>
 

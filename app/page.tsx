@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import HeroImage from '@/assets/images/hero-image.jpg'
+import HeroImage from '@/assets/images/heroImage.jpg'
 import CTASection from "@/components/CTASection";
 import StatsSection from "@/components/StatsSection";
 import { StaticImageData } from 'next/image';
@@ -182,15 +182,15 @@ export default function Home() {
           { text: 'Residential Care ', isHighlighted: true },
           { text: 'for Your Loved Ones', isHighlighted: false },
         ]}
-        description="Three welcoming homes across Blackpool, Thornton-Cleveleys and Fleetwood — providing safe, respectful, person-centred support since our founding."
+        description="At Terebinth Limited, we provide safe, respectful and person-centred residential care in homes across Blackpool, Thornton-Cleveleys and Fleetwood. Our focus is on dignity, wellbeing and creating environments where residents feel supported and families feel reassured."
         buttons={[
           {
-            label: 'Get a Callback',
-            href: '/contact',
+            label: 'Explore Our Homes ',
+            href: '/our-homes',
             variant: 'solid',
           },
           {
-            label: 'Get a Callback',
+            label: 'Contact Us',
             href: '/contact',
             variant: 'outline',
           },
@@ -205,9 +205,9 @@ export default function Home() {
         ]}
         badges={[
           { icon: starIcon, text: 'CQC Registered Provider', textColor: '[#6B7280]' },
-          { icon: starIcon, text: 'All homes inspected & compliant', textColor: '[#AD9451]' },
+          { text: 'All homes inspected & compliant', textColor: '[#AD9451]' },
           { icon: checkboxIcon, text: 'Established care provider', textColor: '[#6B7280]' },
-          { icon: starIcon, text: 'Fylde Coast community', textColor: '[#AD9451]' },
+          { text: 'Fylde Coast community', textColor: '[#AD9451]' },
         ]}
       />
       <CareHomesSection homes={careHomes} />
@@ -241,7 +241,7 @@ export default function Home() {
             variant: 'solid',
           },
           {
-            label: 'Make Enquiry',
+            label: 'Arrange an Enquiry',
             href: '/contact',
             variant: 'outline',
           },
@@ -260,8 +260,8 @@ export default function Home() {
             variant: 'solid',
           },
           {
-            label: 'View Our Homes',
-            href: '/our-homes',
+            label: 'Arrange an Enquiry',
+            href: '/contact',
             variant: 'outline',
           },
         ]}

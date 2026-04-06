@@ -1,7 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import aboutImage from '@/assets/images/about.jpg';
-import aboutHeroImage from '@/assets/images/hero-image.jpg'
+import aboutHeroImage from '@/assets/images/heroImage.jpg'
 import HeroSection from "@/components/HeroSection";
 import ApproachSection from "@/components/ApproachSection";
 import heartIcon from '@/assets/icons/heart.svg';
@@ -104,7 +104,7 @@ export default function AboutPage() {
           { text: 'Your Loved Ones ', isHighlighted: true },
           { text: 'with Dignity and Respect', isHighlighted: false },
         ]}
-        description="A trusted local care provider committed to safe, person-centred residential care across the Fylde Coast."
+        description="Terebinth Limited is a Fylde Coast care provider focused on delivering safe, respectful and person-centred residential care. With homes across Blackpool, Thornton-Cleveleys and Fleetwood, we are committed to creating supportive environments where residents feel valued and families feel reassured."
         buttons={[]}
       />
 
@@ -119,7 +119,7 @@ export default function AboutPage() {
           'As a growing organisation, we remain committed to maintaining the highest standards of care across all our homes — ensuring consistency, quality and compassion in everything we do.'
         ]}
         buttonLabel="Make Enquires"
-        buttonHref="/about"
+        buttonHref="/contact"
         imageButton={{ label: "Serving the Fylde Coast", href: "/about" }}
       />
 
@@ -155,17 +155,17 @@ export default function AboutPage() {
       
 
       <CTASection
-            title="Talk to Us About Care For Your Loved Ones"
-            description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
+            title="Find Out More About Our Homes"
+            description="Explore our homes across the Fylde Coast and learn more about the care environments we are building for residents and families"
             buttons={[
               {
-                label: 'Speak to Our Team',
-                href: '/contact',
+                label: 'View Our Homes',
+                href: '/our-homes',
                 variant: 'solid',
               },
               {
                 label: 'Discuss care Needs',
-                href: '/our-homes',
+                href: '/contact',
                 variant: 'outline',
               },
             ]}

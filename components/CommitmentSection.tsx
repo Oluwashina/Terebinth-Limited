@@ -25,7 +25,7 @@ export default function CommitmentSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Side - Content */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
               {label}
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-4xl font-normal text-[#FFFFFF] mb-8 leading-tight max-w-60 md:max-w-70">

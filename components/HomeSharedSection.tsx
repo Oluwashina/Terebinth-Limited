@@ -36,11 +36,11 @@ export default function HomesSharedSection({
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-0.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-0">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="border-[0.8px] border-[#5A5751] p-6 sm:p-6 flex flex-col items-start hover:border-[#AD9451] transition bg[#2B271E]"
+              className="border-[0.8px] border-[#5A5751] p-6 sm:p-8 flex flex-col items-start hover:border-[#AD9451] transition bg[#2B271E]"
             >
             <div className='flex gap-4 items-start'>
 

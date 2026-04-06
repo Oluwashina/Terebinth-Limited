@@ -58,7 +58,7 @@ export default function HomeDetailsSection({
   const contentCol = (
     <div>
       {/* Location Label */}
-      <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-2">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-2">
         {location}
       </p>
 

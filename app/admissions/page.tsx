@@ -1,15 +1,12 @@
 import HeroSection from "@/components/HeroSection";
-import admissionsHeroImage from '@/assets/images/hero-image.jpg';
+import admissionsHeroImage from '@/assets/images/heroImage.jpg';
 import ProcessSection from "@/components/ProcessSection";
 import CTASection from "@/components/CTASection";
 import AdmissionStepsSection from "@/components/AdmissionStepsSection";
 import admissionStepsImage from '@/assets/images/admission-steps.jpg'
 import heartIcon from '@/assets/icons/heart.svg';
-import medalIcon from '@/assets/icons/medal.svg';
-import trendIcon from '@/assets/icons/trend.svg';
-import shieldIcon from '@/assets/icons/shield.svg';
-import locationIcon from '@/assets/icons/map.svg';
 import personIcon from '@/assets/icons/person.svg';
+import shieldIcon from '@/assets/icons/shield.svg';
 import CommitmentSection from "@/components/CommitmentSection";
 import FAQSection from "@/components/FAQSection";
 
@@ -28,19 +25,8 @@ export default function AdmissionsPage() {
           { text: 'Right Care Home ', isHighlighted: true },
           { text: 'For Your Loved Ones', isHighlighted: false },
         ]}
-        description="We are here to help you navigate the process with clarity, compassion and no pressure — at every step of the way."
-        buttons={[
-          {
-            label: 'Start Your Journey',
-            href: '#process',
-            variant: 'solid',
-          },
-          {
-            label: 'Learn More',
-            href: '#faq',
-            variant: 'outline',
-          },
-        ]}
+        description="We understand that choosing residential care is a major decision. Our aim is to make the enquiry and admissions process clear, respectful and supportive from the very first conversation."
+        buttons={[]}
       />
 
       <ProcessSection
@@ -116,7 +102,7 @@ export default function AdmissionsPage() {
             description: "Care plans are built around the individual — their history, preferences and daily needs."
             },
             {
-            icon: personIcon,
+            icon: shieldIcon,
             title: "Smooth, supported transition",
             description: "We help residents and families settle in with confidence, care and continuity."
             }

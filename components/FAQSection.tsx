@@ -41,7 +41,7 @@ export default function FAQSection({
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
           <h2 className="text-3xl sm:text-4xl max-w-sm mx-auto lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">

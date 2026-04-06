@@ -49,7 +49,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6">
           {/* Left Side - Contact Information */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9551] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9551] mb-3">
               Contact Information
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1F2933] mb-5">

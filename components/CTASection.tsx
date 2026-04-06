@@ -25,7 +25,7 @@ export default function CTASection({
           </h2>
 
           {/* Description */}
-          <p className="text-sm sm:text-base text-[#F7F4EE] mb-10 leading-relaxed max-w-3xl">
+          <p className="text-sm sm:text-base text-[#F7F4EE] mb-10 leading-relaxed max-w-xl">
             {description}
           </p>
 

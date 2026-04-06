@@ -30,7 +30,7 @@ export default function ProcessSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Left Content */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
               {label}
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-[#1F2933] mb-8 leading-tight max-w-md">
