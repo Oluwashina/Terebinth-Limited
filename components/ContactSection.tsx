@@ -62,8 +62,7 @@ export default function ContactSection() {
           email: formData.email,
           homeOfInterest: selectedHome,
           message: formData.message,
-          // to_email: 'enquiries@terebinthltd.com',
-          to_email: 'shinzbaba@gmail.com',
+          to_email: 'enquiries@terebinthltd.com',
         }
       );
 
