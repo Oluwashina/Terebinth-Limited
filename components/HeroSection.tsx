@@ -33,7 +33,7 @@ export default function HeroSection({
   buttons = [],
 }: HeroSectionProps) {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden rounded-b-[50px]">
+    <section className="relative w-full md:min-h-screen overflow-hidden rounded-b-[50px]">
       {/* Background Image */}
       <Image
         src={imageSrc}
@@ -47,7 +47,7 @@ export default function HeroSection({
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative w-full h-full flex flex-col justify-center md:justify-end min-h-screen">
+      <div className="relative w-full h-full flex flex-col justify-center md:justify-end md:min-h-screen">
         <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-16 md:pb-24 pt-24 md:pt-44">
           <div className="max-w-2xl">
             {/* Badges */}
