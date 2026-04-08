@@ -22,6 +22,8 @@ import watsonBedroomArea from '@/assets/images/watson-bedroom-area.jpg';
 import watsonOutdoorArea from '@/assets/images/watson-outdoor-area.jpg';
 import watsonInteriorHallway from '@/assets/images/watson-interior-hallway.jpg';
 import Image from "next/image";
+import Script from 'next/script';
+
 
 export default function WatsonHousePage() {
  
@@ -148,6 +150,14 @@ export default function WatsonHousePage() {
               </span>
               <span>CQC Rated Good</span>
             </a>
+
+             <Script 
+              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
+              strategy="lazyOnload"
+              data-id="1-2789934083"
+              data-host="www.cqc.org.uk"
+              type="location"
+            />
           </div>
         </section>
 
@@ -243,6 +253,8 @@ export default function WatsonHousePage() {
             mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.6485385168835!2d-3.0541756232057047!3d53.795742672423025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44057cd89651%3A0xb6c6d2c794fd671!2sWatson%20House%2C%2050%20Station%20Rd%2C%20Blackpool%20FY4%201EU%2C%20UK!5e0!3m2!1sen!2sng!4v1775475570296!5m2!1sen!2sng"
             backgroundColor="bg-[#FFFFFF]"
             />
+
+            
         </div>
     )
 };

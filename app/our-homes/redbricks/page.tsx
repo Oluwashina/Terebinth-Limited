@@ -24,6 +24,7 @@ import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
 import DailyLifeSection from "@/components/DailyLifeSection";
 import GallerySection from "@/components/GallerySection";
 import ContactLocationSection from "@/components/ContactLocationSection";
+import Script from "next/script";
 
 export default function RedbricksPage() {
 
@@ -218,7 +219,13 @@ export default function RedbricksPage() {
           mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.6823386498986!2d-3.0517924088128296!3d53.86629640139537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b4355d955f211%3A0xb2bb8180a5b99a7b!2sRedbricks!5e0!3m2!1sen!2sng!4v1775475671041!5m2!1sen!2sng"
           backgroundColor="bg-[#FFFFFF]"
         />
-
+         <Script 
+              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
+              strategy="lazyOnload"
+              data-id="1-16958494954"
+              data-host="www.cqc.org.uk"
+              type="location"
+            />
     </div>
     );
 }
