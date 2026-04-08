@@ -134,6 +134,14 @@ export default function WatsonHousePage() {
           <div className="max-w-4xl mx-auto text-center">   
             {/* Heading */}
             <h2 className="text-lg md:text-xl font-bold text-[#FAF8F4] mb-4">CQC Rating: Good</h2>
+
+             <Script 
+              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
+              strategy="lazyOnload"
+              data-id="1-2789934083"
+              data-host="www.cqc.org.uk"
+              type="location"
+            />
             
             {/* Description */}
             <p className="text-[#FAF8F4] text-sm md:text-sm leading-relaxed mb-6 max-w-xl mx-auto opacity-90">
@@ -151,13 +159,7 @@ export default function WatsonHousePage() {
               <span>CQC Rated Good</span>
             </a>
 
-             <Script 
-              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
-              strategy="lazyOnload"
-              data-id="1-2789934083"
-              data-host="www.cqc.org.uk"
-              type="location"
-            />
+
           </div>
         </section>
 
