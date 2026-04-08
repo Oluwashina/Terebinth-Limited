@@ -115,29 +115,21 @@ export default function AdmissionsPage() {
         subtitle="Answers to questions families often ask us about the admissions process."
         items={[
             {
-            question: "How do I arrange an enquiry?",
-            answer: "You can contact us by phone on 01253 341550 or by email at enquiries@terebinthltd.com. Our team will be happy to answer your initial questions and guide you through the next steps at your own pace."
+            question: "How do I enquire about a home?",
+            answer: "You can contact us directly by phone, email or through the website contact form."
             },
             {
-            question: "Can I visit the homes before making a decision?",
-            answer: "Absolutely. We warmly encourage visits to our homes so you can see the environment, meet our staff and ask any questions. This helps families make informed, confident decisions in their own time."
+            question: "Can I ask about more than one home?",
+            answer: "Yes. We can help you understand which of our homes may be most suitable."
             },
             {
-            question: "What information do I need to provide?",
-            answer: "During our conversation, we'll ask about your loved one's needs, preferences, daily routine and any specific requirements. This helps us understand how we can provide appropriate, person-centred care. We keep this discussion supportive and at a pace that suits you."
+            question: "Can I arrange an enquiry or visit?",
+            answer: "Please contact our team and we will advise on the next available steps."
             },
             {
-            question: "How long does the admissions process take?",
-            answer: "The timeline depends on your individual circumstances. We aim to be flexible and work at a pace that feels right for you and your family. There is no rush — we understand this is an important decision."
+            question: "Who can make an enquiry?",
+            answer: "Enquiries can be made by individuals, families, representatives, professionals or referrers."
             },
-            {
-            question: "Do you work with social services and healthcare professionals?",
-            answer: "Yes, we work closely with local health and social care partners, including social services teams and healthcare professionals. We're experienced in liaising with commissioners and local authorities to ensure seamless care provision."
-            },
-            {
-            question: "What happens after admission?",
-            answer: "We provide ongoing support and communication with families after admission. Our team remains available to you at every stage, and we continue regular reviews to ensure care is meeting your loved one's needs."
-            }
         ]}
         ctaText="Have more questions? We are here to help."
         ctaButtonLabel="Get in Touch"
