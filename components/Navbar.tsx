@@ -54,9 +54,9 @@ export default function Navbar() {
           </div>
 
           {/* Callback Button */}
-          <button className="hidden md:block text-sm bg-[#AD9451] cursor-pointer text-white px-6 py-3 rounded-full hover:bg-[#8B6D3C] transition">
-            Get a Callback
-          </button>
+          <Link href="/contact" className="hidden md:block text-sm bg-[#AD9451] cursor-pointer text-white px-6 py-3 rounded-full hover:bg-[#8B6D3C] transition">
+            Enquire Now
+          </Link>
         </div>
         </div>
       </nav>

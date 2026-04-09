@@ -27,8 +27,8 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
           <h2 className="text-3xl sm:text-3xl max-w-xs lg:text-4xl font-bold text-[#1F2933] mb-4">
             Care Homes Across the Fylde Coast
           </h2>
-          <p className="text-[#6B7280] max-w-md">
-            Three residential care homes, each providing safe, dignified and person-centred support in welcoming, well-managed environments.
+          <p className="text-[#6B7280] max-w-xl">
+            Our homes are rooted in the communities they serve. With services across Blackpool, Thornton-Cleveleys and Fleetwood, we bring local understanding, responsive leadership and a practical commitment to quality residential care.
           </p>
         </div>
 

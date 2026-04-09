@@ -133,8 +133,8 @@ export default function AboutPage() {
        <MissionSection
         label="Our Mission"
         title="Why We Do What We Do"
-        description="Our mission is to provide safe, compassionate and well-led residential care that promotes dignity, supports wellbeing and gives families confidence. Every decision we make is guided by that purpose."
-        mission="Our mission is to provide safe, compassionate and well-led residential care that promotes dignity, supports wellbeing and gives families confidence."
+        description="Our mission is to provide safe, compassionate and well-led residential care that protects dignity, supports wellbeing and gives families confidence. We want our homes to be places where people feel secure, supported and respected. We also recognise that quality care depends on clear standards, responsible leadership and a commitment to continuous improvement. Our mission is therefore not only to provide care, but to build services that are trusted, accountable and sustainable."
+        mission="Our mission is therefore not only to provide care, but to build services that are trusted, accountable and sustainable."
         attribution="Terebinth Limited — Mission Statement"
       />
 

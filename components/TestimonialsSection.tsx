@@ -17,7 +17,7 @@ export default function TestimonialsSection({
   testimonials,
 }: TestimonialsSectionProps) {
   return (
-    <section className="bg-[#FAF8F4] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
+    <section className="bg-[#F8FAFB] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-12 lg:mb-14">

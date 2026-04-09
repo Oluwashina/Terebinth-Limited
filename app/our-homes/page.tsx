@@ -31,6 +31,30 @@ export default function OurHomesPage() {
         buttons={[]}
       />
 
+     <HomeDetailsSection 
+            location="THORNTON-CLEVELEYS"
+            homeTitle="Redbricks Care Home"
+            address="Thornton-Cleveleys, Lancashire"
+            image={redbricksImage}
+            imageLabel="Redbricks Care Home, Thornton-Cleveleys"
+            descriptions={[
+                "Redbricks Care Home is part of the growing Fylde Coast care network. Located in Thornton-Cleveleys, the home reflects our commitment to providing safe and compassionate residential support in a warm and well-managed environment.",
+                "Residents at Redbricks benefit from a caring team, regular activities and strong community connections that help maintain quality of life."
+            ]}
+            features={[
+                { text: "Safe, well-equipped care environment" },
+                { text: "Compassionate support staff" },
+                { text: "Experienced management team" },
+                { text: "Regular activities and engagement" },
+                { text: "Community connections and outings" }
+            ]}
+            viewButtonLabel="View Redbricks"
+            viewButtonHref="/our-homes/redbricks"
+            bookButtonLabel="Arrange A Visit"
+            bookButtonHref="/contact"
+            imagePosition="right"
+            backgroundColor="bg-[#FFFFFF]"
+         />
 
      <HomeDetailsSection 
         location="BLACKPOOL"
@@ -53,32 +77,8 @@ export default function OurHomesPage() {
         viewButtonHref="/our-homes/watson-house"
         bookButtonLabel="Arrange A Visit"
         bookButtonHref="/contact"
+        backgroundColor="bg-[#FAF8F4]"
         />
-
-        <HomeDetailsSection 
-            location="THORNTON-CLEVELEYS"
-            homeTitle="Redbricks Care Home"
-            address="Thornton-Cleveleys, Lancashire"
-            image={redbricksImage}
-            imageLabel="Redbricks Care Home, Thornton-Cleveleys"
-            descriptions={[
-                "Redbricks Care Home is part of the growing Fylde Coast care network. Located in Thornton-Cleveleys, the home reflects our commitment to providing safe and compassionate residential support in a warm and well-managed environment.",
-                "Residents at Redbricks benefit from a caring team, regular activities and strong community connections that help maintain quality of life."
-            ]}
-            features={[
-                { text: "Safe, well-equipped care environment" },
-                { text: "Compassionate support staff" },
-                { text: "Experienced management team" },
-                { text: "Regular activities and engagement" },
-                { text: "Community connections and outings" }
-            ]}
-            viewButtonLabel="View Redbricks"
-            viewButtonHref="/our-homes/redbricks"
-            bookButtonLabel="Arrange A Visit"
-            bookButtonHref="/contact"
-            imagePosition="right"
-            backgroundColor="bg-[#FAF8F4]"
-         />
 
          <HomeDetailsSection 
             location="FLEETWOOD"
