@@ -52,7 +52,7 @@ export default function CareSpecialismsSection({
         {specialisms.map((specialism, index) => (
           <div
             key={index}
-            className="bg-[#FAF8F4] border md:border-[0.8px] border-[#AD955159] px-4 py-2 rounded-full md:rounded-xs"
+            className="bg-[#FAF8F4] border md:border-[0.8px] border-[#AD955159] px-4 py-2 rounded-full md:rounded-[20px]"
           >
             <p className="text-[#AD9551] text-xs font-semibold uppercase tracking-wide">
               • {specialism}
