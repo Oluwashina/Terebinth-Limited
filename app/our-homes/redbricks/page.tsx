@@ -69,12 +69,12 @@ export default function RedbricksPage() {
         buttons={[
           {
             label: 'Book A Visit',
-            href: '/book-visit?home=redbricks',
+            href: '/contact',
             variant: 'solid',
           },
           {
-            label: 'Book a Visit',
-            href: '/book-visit?home=redbricks',
+            label: 'Speak to Our Team ',
+            href: '/contact',
             variant: 'outline',
           },
         ]}

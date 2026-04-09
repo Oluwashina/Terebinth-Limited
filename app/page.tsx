@@ -216,7 +216,8 @@ export default function Home() {
         label="About Us"
         title="A Trusted Local Care Provider"
         descriptions={[
-          "Terebinth Limited operates residential care services across the Fylde Coast. We are committed to safe, respectful and person-centred care that prioritises dignity, wellbeing, and quality of life for every resident and their family."
+          "Terebinth Limited is a locally rooted care provider with a growing presence across the Fylde Coast. We are committed to delivering residential care that combines compassion with professionalism, helping residents feel safe, respected and valued every day.",
+          "We believe good care is built on strong leadership, attentive support and a genuine understanding of the people we serve. Our aim is to provide homes that offer no only care, but also comfort, stability and peace of mind for families."
         ]}
         buttonLabel="Read More"
         buttonHref="/about"

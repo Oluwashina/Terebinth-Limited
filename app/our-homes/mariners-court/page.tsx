@@ -116,16 +116,16 @@ export default function MarinersCourtPage() {
                 ]}
                 description="Mariners Court is reopening under new management with a clear aim: to create a comfortable, well-led home where residents feel respected, and families feel informed, welcome and involved. Set beside Fleetwood's boating lake and promenade on Laidleys Walk, Mariners Court offers 26 beds in one of Fleetwood's most distinctive coastal settings — close to Marine Hall, Fleetwood Market, the Museum and connected by the Fylde Coast tramway."
                 buttons={[
-                    {
+                  {
                     label: 'Book A Visit',
                     href: '/contact',
                     variant: 'solid',
-                    },
-                    {
-                    label: 'Book a Visit',
+                  },
+                  {
+                    label: 'Speak to Our Team ',
                     href: '/contact',
                     variant: 'outline',
-                    },
+                  },
                 ]}
                 />
          <AboutSection

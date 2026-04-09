@@ -67,16 +67,16 @@ export default function WatsonHousePage() {
             ]}
             description="A Good-rated, CQC-regulated care home for up to 9 residents, offering personal care in a calm and more individual environment.Watson House Rest Home is located on Station Road in Blackpool's South Shore area, close to the promenade and local amenities. Nearby family landmarks in the wider area include South Pier, Sandcastle Waterpark and Blackpool Pleasure Beach, which helps position the home in a well-known and accessible part of Blackpool for visiting relatives."
             buttons={[
-                {
+              {
                 label: 'Book A Visit',
-                href: '/book-visit?home=watson-house',
+                href: '/contact',
                 variant: 'solid',
-            },
-            {
-                label: 'Book a Visit',
-                href: '/book-visit?home=watson-house',
+              },
+              {
+                label: 'Speak to Our Team ',
+                href: '/contact',
                 variant: 'outline',
-            },
+              },
             ]}
         />
       
