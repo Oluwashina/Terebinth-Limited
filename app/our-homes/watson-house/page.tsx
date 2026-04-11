@@ -23,6 +23,7 @@ import watsonOutdoorArea from '@/assets/images/watson-outdoor-area.jpg';
 import watsonInteriorHallway from '@/assets/images/watson-interior-hallway.jpg';
 import Image from "next/image";
 import Script from 'next/script';
+import Link from "next/link";
 
 
 export default function WatsonHousePage() {
@@ -134,31 +135,24 @@ export default function WatsonHousePage() {
           <div className="max-w-4xl mx-auto text-center">   
             {/* Heading */}
             <h2 className="text-lg md:text-xl font-bold text-[#FAF8F4] mb-4">CQC Rating: Good</h2>
-
-             <Script 
-              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
-              strategy="lazyOnload"
-              data-id="1-2789934083"
-              data-host="www.cqc.org.uk"
-              type="location"
-            />
-            
+   
             {/* Description */}
             <p className="text-[#FAF8F4] text-sm md:text-sm leading-relaxed mb-6 max-w-xl mx-auto opacity-90">
               Watson House Rest Home is rated Good overall by the Care Quality Commission. This rating reflects our commitment to providing safe, effective, caring, responsive and well-led services where every resident is treated with dignity and respect.
             </p>
             
             {/* CQC Link */}
-            <a 
-              href="#" 
+            <Link 
+              href="https://www.cqc.org.uk/location/1-2789934083"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="inline-flex items-center gap-2 text-sm text-[#AD9551] hover:text-[#E5B88D] font-medium transition-colors"
             >
               <span>
                 <Image src={medalIcon} alt="CQC Good Rating" width={16} height={16} />  
               </span>
               <span>CQC Rated Good</span>
-            </a>
-
+            </Link>
 
           </div>
         </section>
@@ -254,8 +248,15 @@ export default function WatsonHousePage() {
             buttonHref="/contact"
             mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.6485385168835!2d-3.0541756232057047!3d53.795742672423025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b44057cd89651%3A0xb6c6d2c794fd671!2sWatson%20House%2C%2050%20Station%20Rd%2C%20Blackpool%20FY4%201EU%2C%20UK!5e0!3m2!1sen!2sng!4v1775475570296!5m2!1sen!2sng"
             backgroundColor="bg-[#FFFFFF]"
-            />
+         />
 
+           <Script 
+          src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
+          strategy="lazyOnload"
+          data-id="1-2789934083"
+          data-host="www.cqc.org.uk"
+          type="location"
+        />
             
         </div>
     )
