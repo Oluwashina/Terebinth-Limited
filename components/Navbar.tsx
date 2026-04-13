@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
+    { label: 'About Us', href: '/about' },
     { label: 'Our Homes', href: '/our-homes' },
     { label: 'Admissions', href: '/admissions' },
     { label: 'Contact', href: '/contact' },

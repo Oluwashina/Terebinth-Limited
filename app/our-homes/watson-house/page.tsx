@@ -42,7 +42,7 @@ export default function WatsonHousePage() {
     {
       icon: accessibilityIcon,
       title: 'Assessible Local Setting ',
-      description: 'CQC describes the home as being close to Blackpool promenade and other amenities. Our South Shore location provides easy access for visiting families and connects residents to the familiar local community.'
+      description: 'Our South Shore location provides easy access for visiting families and connects residents to the familiar local community.'
     },
     {
       icon: homeIcon,
@@ -86,7 +86,7 @@ export default function WatsonHousePage() {
             title="A Smaller Home with a More Personal Feel"
             label="ABOUT THE HOME"
             descriptions={[
-            'Watson House Rest Home is a residential care home run by Terebinth Limited and led by a registered manager. Its smaller registration size supports a more personal setting than many larger homes, while remaining fully within the CQC-regulated framework. CQC lists the home as supporting adults over 65, adults under 65, and people with physical disabilities. Set close to Blackpool promenade and the South Shore seafront area, the home sits in a location that is familiar and convenient for many families visiting from within Blackpool and the wider Fylde Coast. '
+            'Watson House Rest Home is a residential care home run by Terebinth Limited and led by a registered manager. Its smaller registration size supports a more personal setting than many larger homes, while remaining fully within the CQC-regulated framework. Watson House supports adults over 65, adults under 65, and people with physical disabilities. Set close to Blackpool promenade and the South Shore seafront area, the home sits in a location that is familiar and convenient for many families visiting from within Blackpool and the wider Fylde Coast.'
             ]}
             buttonLabel="Book A Visit"
             buttonHref="/contact"
@@ -98,13 +98,14 @@ export default function WatsonHousePage() {
             profileImage={sara}
             profileName="Sara Bonny"
             label="OUR LEADERSHIP"
-            title="Meet Our Registered Manager"
+            title="Meet Sara Bonney, Registered Manager"
             descriptions={[
-               "Sara brings together deep care experience, calm leadership, and robust governance oversight. With over 20 years of experience in health and social care, Sara is an accomplished Care Home Manager with a proven record of delivering safe and high-quality care services. She combines her warm leadership with strong operational discipline and has successfully led care teams, strengthened compliance, supported residents and families, and helped services grow in quality, reputation, and stability."
+               "Sara brings together deep care experience, calm leadership, and robust governance oversight. With over 20 years of experience in health and social care, Sara is an accomplished Care Home Manager with a proven record of delivering safe and high-quality care services. She combines her warm leadership with strong operational discipline and has successfully led care teams, strengthened compliance, supported residents and families, and helped services grow in quality, reputation, and stability.  Sara's approach emphasizes clear communication, person-centred support, and creating environments where both residents and staff feel valued and respected.",
+               "As the Registered Manager at Watson House, Sara is leading this fresh chapter with a focus on building trust, maintaining high standards, and ensuring that every resident receives compassionate, dignified care tailored to their individual needs. Her extensive background in care home management positions her well to guide Mariners Court through this new beginning."
             ]}
             quote={{
-                text: "At Redbricks Care Home we're not just providing care — we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
-                attribution: "[Sara Bonny], CQC Registered Manager"
+                text: "At Watson House Care Home we're not just providing care — we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
+                attribution: "[Sara Bonny], Registered Manager"
             }}
             objectPosition="center 25%"
          />
@@ -112,7 +113,7 @@ export default function WatsonHousePage() {
         <ApproachSection
             label="Why Choose Us"
             title="Why Families Choose Watson House"
-            subtitle="At Terebinth Limited, we believe excellent residential care is built on respect, compassion and clear communication."
+            subtitle="A smaller-scale home, and a location close to Blackpool's promenade and South Shore amenities."
             cards={whyChooseUsFeatures}
             gap="gap-0"
         />
@@ -122,7 +123,7 @@ export default function WatsonHousePage() {
             title="Comfortable Accommodation in a Homely Setting"
             label="ACCOMODATION"
             descriptions={[
-                "CQC’s published description states that Watson House offers nine single bedrooms over two floors, with en suite vanity units, alongside communal lounge and dining areas. CQC also described the accommodation as accessible, safe, homely and suitable for people’s needs"
+                "Watson House offers nine single bedrooms over two floors, with en suite vanity units, alongside communal lounge and dining areas. Watson House is  accessible, safe, homely, and suitable for people’s needs."
             ]}
             buttonLabel="Arrange A Visit"
             buttonHref="/contact"
@@ -161,7 +162,7 @@ export default function WatsonHousePage() {
             image={watsonPersonalCareImg}
             label="CARE AND SUPPORT"
             title="Personal Care with Dignity at the Centre"
-            description="Watson House is registered to provide accommodation for persons who require nursing or personal care, and the public CQC profile lists service specialisms including adults over 65, adults under 65 and physical disabilities. The home’s website copy should position it as a residential care setting focused on day-to-day support, dignity and reassurance. "
+            description="Watson House is registered to provide accommodation for persons who require nursing or personal cares  including adults over 65, adults under 65 and physical disabilities. The home’s website copy should position it as a residential care setting focused on day-to-day support, dignity and reassurance.  "
             specialisms={[
                 'ADULTS OVER 65',
                 'ADULTS UNDER 65',
@@ -204,27 +205,27 @@ export default function WatsonHousePage() {
           images={[
             {
               src: watsonPersonalCareImg,
-              label: "Main Lounge & Dining Area"
+              label: ""
             },
             {
               src: watsonInteriorHallway,
-              label: "Interior Hallway"
+              label: ""
             },
             {
               src: watsonBedroomArea,
-              label: "Bedroom Area"
+              label: ""
             },
             {
               src: watsonOutdoorArea,
-              label: "Outdoor Area"
+              label: ""
             },
             {
               src: watsonOutdoorArea,
-              label: "Outdoor Area"
+              label: ""
             },
             {
               src: aboutImage,
-              label: "Outdoor Area"
+              label: ""
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

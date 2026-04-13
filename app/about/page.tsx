@@ -118,7 +118,7 @@ export default function AboutPage() {
           'Our team is dedicated to creating safe, warm and respectful environments where residents can lead their best lives while receiving the support they need. We understand the importance of trust when choosing a care home.' ,
           'As a growing organisation, we remain committed to maintaining the highest standards of care across all our homes — ensuring consistency, quality and compassion in everything we do.'
         ]}
-        buttonLabel="Make Enquires"
+        buttonLabel="Make Enquiries"
         buttonHref="/contact"
         imageButton={{ label: "Serving the Fylde Coast", href: "/about" }}
       />

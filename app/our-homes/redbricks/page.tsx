@@ -2,8 +2,6 @@ import HeroSection from "@/components/HeroSection";
 import redbricksHeroImage from '@/assets/images/redbricks.jpg'; 
 import AboutSection from "@/components/AboutSection";
 import aboutImage from '@/assets/images/redbricks-about.jpg';
-import LeadershipProfileSection from "@/components/LeadershipProfileSection";
-import shola from '@/assets/images/shola-ogunleye.jpg';
 import heartIcon from '@/assets/icons/heart.svg';
 import homeIcon from '@/assets/icons/home.svg';
 import waveIcon from '@/assets/icons/wave.svg';
@@ -92,21 +90,6 @@ export default function RedbricksPage() {
         imagePosition="right"
       />
 
-      <LeadershipProfileSection
-            profileImage={shola}
-            profileName="Shola Ogunleye"
-            label="OUR LEADERSHIP"
-            title="Meet Shola Ogunleye, Our Director"
-            descriptions={[
-                "As a Director at Terebinth Limited, I oversee regulated residential care services across the Fylde Coast. My focus is on building safe, well-led, and person-centred care homes that thrive on clear operational controls and continuous improvement.",
-                "I bring a diverse professional background spanning complex operations, procurement, project delivery, and risk management. Today, I apply that commercial and strategic breadth to the care sector—ensuring our facilities not only meet rigorous CQC standards but operate sustainably in a challenging economic landscape. Currently, I am driving the development and operational ramp-up of specialist residential services, bridging the gap between local authority commissioning needs and high-quality care delivery."
-            ]}
-            quote={{
-                text: "At Redbricks Care Home we're not just providing care – we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
-                attribution: "[Shola Ogunleye], Director"
-            }}
-         />
-
         <ApproachSection
             label="Why Choose Us"
             title="Why Families Choose Redbricks"
@@ -162,7 +145,7 @@ export default function RedbricksPage() {
             {
               icon: clockIcon,
               title: "Visiting & Family Involvement",
-              description: "Families are welcome to visit throughout the day, and we encourage involvement in care planning. Our South Shore location makes us easy to reach for families from across Blackpool and the Fylde Coast."
+              description: "Families are welcome to visit throughout the day, and we encourage involvement in care planning. Our Tram Stop:Little Bispham location makes us easy to reach for families from across Blackpool and the Fylde Coast."
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

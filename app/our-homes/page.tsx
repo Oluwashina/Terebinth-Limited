@@ -34,7 +34,7 @@ export default function OurHomesPage() {
      <HomeDetailsSection 
             location="THORNTON-CLEVELEYS"
             homeTitle="Redbricks Care Home"
-            address="Thornton-Cleveleys, Lancashire"
+            address="512 Queens Promenade Thornton-Cleveleys, FY5 1PQ"
             image={redbricksImage}
             imageLabel="Redbricks Care Home, Thornton-Cleveleys"
             descriptions={[
@@ -77,13 +77,14 @@ export default function OurHomesPage() {
         viewButtonHref="/our-homes/watson-house"
         bookButtonLabel="Arrange A Visit"
         bookButtonHref="/contact"
+        imagePosition="left"
         backgroundColor="bg-[#FAF8F4]"
         />
 
          <HomeDetailsSection 
             location="FLEETWOOD"
             homeTitle="Mariners Court Care Home"
-            address="Fleetwood, Lancashire"
+            address="45-46 Laidleys Walk Fleetwood, FY7 7JL"
             image={marinersImage}
             imageLabel="Mariners Court Care Home, Fleetwood"
             descriptions={[
@@ -101,7 +102,7 @@ export default function OurHomesPage() {
             viewButtonHref="/our-homes/mariners-court"
             bookButtonLabel="Arrange A Visit"
             bookButtonHref="/contact"
-            imagePosition="left"
+            imagePosition="right"
             backgroundColor="bg-white"
             />
 
@@ -124,7 +125,7 @@ export default function OurHomesPage() {
             {
             icon: shieldIcon,
             title: "Focus on dignity and wellbeing",
-            description: "Preserving independence and individuality at the heart of everything we do."
+            description: "Preserving independence and individuality is at the heart of everything we do."
             },
             {
             icon: trendIcon,
