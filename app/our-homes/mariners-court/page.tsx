@@ -187,6 +187,20 @@ export default function MarinersCourtPage() {
             </div>
           </section>
 
+
+            <section className="py-10 px-4">
+                  <div className="max-w-7xl mx-auto">
+                  
+                    <iframe 
+                      src="/mariners-widget.html"
+                      width="100%"
+                      height="250px"
+                      title="Mariners Court Widget"
+                      style={{ maxHeight:'100%', border: 'none' }}
+                    />
+                  </div>
+          </section>
+
           {/* Care & Support Section */}
         <section className="py-16 md:py-20 px-4 bg-[#F8FAFB]">
         <div className="max-w-7xl mx-auto">
@@ -459,14 +473,6 @@ export default function MarinersCourtPage() {
             buttonHref="/contact"
             mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.4434883436256!2d-3.0381164231979025!3d53.92386447246247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b5c642de4e009%3A0xa6cceea9aa067b91!2sMariners%20Court%20Care%20Home!5e0!3m2!1sen!2sng!4v1775475732544!5m2!1sen!2sng"
             backgroundColor="bg-[#FFFFFF]"
-            />
-
-            <Script 
-              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js"
-              strategy="lazyOnload"
-              data-id="1-27205845980"
-              data-host="www.cqc.org.uk"
-              type="location"
             />
         </div>
     );
