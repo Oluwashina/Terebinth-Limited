@@ -4,11 +4,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@/assets/images/logo.svg';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const navItems = [
     { label: 'Home', href: '/' },
@@ -112,7 +113,10 @@ export default function Navbar() {
 
               {/* Enquire Button */}
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  router.push('/contact');
+                }}
                 className="w-full mt-2 bg-[#AD9451] text-white text-sm py-4 rounded-full hover:bg-[#8B6D3C] transition font-medium"
               >
                 Enquire Now

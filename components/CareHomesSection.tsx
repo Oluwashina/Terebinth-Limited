@@ -84,7 +84,7 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
                   href={`/our-homes/${home.id}`}
                   className="inline-block bg-[#AD9451] text-white px-10 py-4 rounded-full font-medium text-sm text-center hover:bg-[#8B6D3C] transition w-fit"
                 >
-                  Make Enquiries
+                  {`View ${home.name.split(' ')[0]}`}
                 </Link>
               </div>
             </div>

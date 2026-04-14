@@ -100,10 +100,15 @@ export default function RedbricksPage() {
 
            <AboutSection
             image={redbricksAccomodation}
-            title="Comfortable Accommodation in Compact Coastal Homes"
+            title="Comfortable Accommodation in Compact Coastal Home"
             label="ACCOMODATION"
             descriptions={[
                 "Redbricks premises has an open-plan lounge/dining room, kitchen and laundry facilities, and nine single rooms with ensuite facilities across the ground and first floors. There is a passenger lift between floors. "
+            ]}
+             facilities={[
+              "Private bedrooms with en-suite facilities",
+              "Accessible bathrooms and adapted facilities",
+              "Activity and quiet rooms",
             ]}
             buttonLabel="Arrange A Visit"
             buttonHref="/contact"

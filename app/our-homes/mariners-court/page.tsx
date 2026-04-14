@@ -142,15 +142,16 @@ export default function MarinersCourtPage() {
 
           <LeadershipProfileSection
             profileImage={sara}
-            profileName="Sara Bonny"
+            profileName="Sara Bonney"
             label="OUR LEADERSHIP"
-            title="Meet Our Registered Manager"
+            title="Meet Sara Bonney, Registered Manager"
             descriptions={[
-               "Sara brings together deep care experience, calm leadership, and robust governance oversight. With over 20 years of experience in health and social care, Sara is an accomplished Care Home Manager with a proven record of delivering safe and high-quality care services. She combines her warm leadership with strong operational discipline and has successfully led care teams, strengthened compliance, supported residents and families, and helped services grow in quality, reputation, and stability."
+               "Sara brings together deep care experience, calm leadership, and robust governance oversight. With over 20 years of experience in health and social care, Sara is an accomplished Care Home Manager with a proven record of delivering safe and high-quality care services. She combines her warm leadership with strong operational discipline and has successfully led care teams, strengthened compliance, supported residents and families, and helped services grow in quality, reputation, and stability.",
+               " Sara's approach emphasizes clear communication, person-centred support, and creating environments where both residents and staff feel valued and respected. As the Registered Manager at Mariners Court, Sara is leading this fresh chapter with a focus on building trust, maintaining high standards, and ensuring that every resident receives compassionate, dignified care tailored to their individual needs. Her extensive background in care home management positions her well to guide Mariners Court through this new beginning."
             ]}
             quote={{
-                text: "At Mariners Court we're not just providing care — we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
-                attribution: "[Sara Bonny], CQC Registered Manager"
+                text: "This is an exciting new chapter for Mariners Court. We're committed to creating a home where residents feel comfortable, families feel involved, and quality care is at the heart of everything we do.",
+                attribution: "Sara Bonney, Registered Manager"
             }}
             objectPosition="center 25%"
          />

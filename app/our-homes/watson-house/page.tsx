@@ -105,7 +105,7 @@ export default function WatsonHousePage() {
             ]}
             quote={{
                 text: "At Watson House Care Home we're not just providing care — we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
-                attribution: "[Sara Bonny], Registered Manager"
+                attribution: "Sara Bonney, Registered Manager"
             }}
             objectPosition="center 25%"
          />

@@ -51,7 +51,7 @@ export default function Home() {
         'Comfortable residential accommodation',
         'Person-Centred Support',
         'Experienced Care Team',
-        'Family Investment Welcomes'
+        'Comfort and Dignity'
       ]
     },
     {
@@ -63,7 +63,7 @@ export default function Home() {
       features: [
         'Well-managed residential setting',
         'Focus on comfort and dignity',
-        'Trained and assessed staff',
+        'Trained and supervised staff',
         'Responsive care approach'
       ]
     }
@@ -162,7 +162,7 @@ export default function Home() {
     },
     {
       id: '4',
-      quote: 'The warm, caring environment at Watson made such a difference to our father. Staff genuinely understood what person-centred care means in practice.',
+      quote: 'The warm, caring environment at Redbrick House made such a difference to our father. Staff genuinely understood what person-centred care means in practice.',
       author: 'Stewart W.',
       role: 'Son of Resident',
       initials: 'SW',

@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import checkboxCircleIcon from '@/assets/icons/checkbox-circle.svg';
 
 export interface AboutSectionProps {
   image: StaticImageData;
@@ -14,6 +15,7 @@ export interface AboutSectionProps {
   buttonHref?: string;
   imagePosition?: 'left' | 'right';
   bgColor?: string;
+  facilities?: string[];
 }
 
 export default function AboutSection({
@@ -25,7 +27,8 @@ export default function AboutSection({
   buttonLabel = 'Read More',
   buttonHref = '#',
   imagePosition = 'left',
-  bgColor = 'bg-white'
+  bgColor = 'bg-white',
+  facilities
 }: AboutSectionProps) {
   const imageCol = (
     <div className="relative w-full h-64 sm:h-80 lg:h-120 rounded-[20px] overflow-hidden">
@@ -68,6 +71,21 @@ export default function AboutSection({
           </p>
         ))}
       </div>
+
+      {/* Facilities */}
+    {facilities && facilities.length > 0 && (
+      <div className="bg-[#FAF8F4] border-[0.8px] border-[#F0E8D5] rounded-lg p-6 mb-8">
+        <h3 className="font-bold text-[#1F2933] text-base md:text-lg mb-6">Our Facilities Include:</h3>
+        <ul className="space-y-4">
+          {facilities.map((facility, index) => (
+            <li key={index} className="flex gap-3 items-center">
+              <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
+              <span className="text-[#6B7280] text-sm md:text-base">{facility}</span>
+            </li>
+          ))}
+              </ul>
+        </div>
+      )}
 
       <Link
         href={buttonHref}
