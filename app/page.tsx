@@ -22,6 +22,7 @@ import ValuesSection from "@/components/ValuesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import LeadershipProfileSection from "@/components/LeadershipProfileSection";
+import RatingsSection from "@/components/RatingsSection";
 
 
 
@@ -224,6 +225,20 @@ export default function Home() {
         buttonLabel="Read More"
         buttonHref="/about"
       />
+
+      <RatingsSection
+          cqc={{
+            rating: "GOOD",
+            ratingColor: "bg-[#4CAF50]",
+            lastUpdate: "31st March 2025",
+            reportUrl: "https://www.cqc.org.uk/location/1-16958494954",
+          }}
+          careHomeReview={{
+            homeName: "Redbricks Care Home",
+            score: 8.9,
+            reviewsUrl: "http://carehome.co.uk/carehome.cfm/searchazref/78047",
+          }}
+        />
 
       <ValuesSection 
         label="Our Values"
