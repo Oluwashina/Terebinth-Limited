@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className="hidden md:block fixed top-0 md:top-6 left-0 right-0 z-50 max-w-7xl md:mx-auto mx-0 rounded-full md:bg-[#FFFFFFF2] bg-[#FAF8F4] border-[0.8px] border-[#E5E7EB] shadow-md">
+    <nav className="hidden md:block fixed top-0 md:top-6 left-0 right-0 z-50 max-w-7xl md:mx-auto mx-0 rounded-full md:bg-[#FFFFFFF2] bg-[#FAF8F4] border-[0.8px] border-[#AD9451] shadow-md">
       <div className="md:max-w-6xl md:mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}

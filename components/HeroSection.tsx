@@ -93,7 +93,7 @@ export default function HeroSection({
                   href={button.href}
                   className={`px-8 py-3 rounded-full font-medium text-center transition whitespace-nowrap ${
                     button.variant === 'outline'
-                      ? 'bg-[#FAF8F4] text-[#AD9451] hover:bg-[#FAF8F4]/90' 
+                      ? 'bg-[#FAF8F4] border-[#AD9451] border-[1.5px] text-[#AD9451] hover:bg-[#FAF8F4]/90' 
                       : 'bg-[#AD9451] text-white hover:bg-[#8B6D3C]'
                   }`}
                 >
