@@ -48,7 +48,7 @@ export default function ApproachSection({
 
             <div className='flex gap-4 items-start'>
               {/* Icon */}
-              <div className="bg-[#F0E8D5] shrink-0 w-10 h-10 rounded-full flex justify-center items-center">
+              <div className="bg-[#FAF8F4] shrink-0 w-11 h-11 rounded-full flex justify-center items-center">
                 <Image
                     src={card.icon}
                     alt={card.title}

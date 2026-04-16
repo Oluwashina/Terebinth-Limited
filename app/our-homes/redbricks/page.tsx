@@ -16,13 +16,15 @@ import bathroomImage from '@/assets/images/bathroom.jpg';
 import bedroomArea from '@/assets/images/bedroomArea.jpg';
 import outdoorArea from '@/assets/images/outdoorArea.jpg';
 import ensuiteRoom from '@/assets/images/ensuiteRoom.jpg';
+import redbricks_Img1 from '@/assets/images/redbricks_img1.jpg';
+import redbricks_Img2 from '@/assets/images/redbricks_img2.jpg';
+import redbricks_Img3 from '@/assets/images/redbricks_img3.jpg';
 import redbricksAccomodation from '@/assets/images/redbricks-accomodation.jpg';
 import activitiesArea from '@/assets/images/activitiesArea.jpg';
 import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
 import DailyLifeSection from "@/components/DailyLifeSection";
 import GallerySection from "@/components/GallerySection";
 import ContactLocationSection from "@/components/ContactLocationSection";
-import Script from "next/script";
 
 export default function RedbricksPage() {
 
@@ -176,27 +178,39 @@ export default function RedbricksPage() {
           images={[
             {
               src: mainLoungeArea,
-              label: "Main Lounge & Dining Area"
+              label: ""
             },
             {
               src: activitiesArea,
-              label: "Activities Area"
+              label: ""
             },
             {
               src: bathroomImage,
-              label: "Bathroom"
+              label: ""
             },
             {
               src: bedroomArea,
-              label: "Bedroom Area"
+              label: ""
             },
             {
               src: outdoorArea,
-              label: "Outdoor Area"
+              label: ""
             },
             {
               src: ensuiteRoom,
-              label: "En suite Room"
+              label: ""
+            },
+              {
+              src: redbricks_Img1,
+              label: ""
+            },
+            {
+              src: redbricks_Img2,
+              label: ""
+            },
+            {
+              src: redbricks_Img3,
+              label: ""
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

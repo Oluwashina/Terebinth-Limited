@@ -147,7 +147,7 @@ export default function AboutPage() {
 
       <LeadershipSection
         label="Leadership"
-        title="Leadership & Commitment"
+        title="Leadership and Commitment"
         description="Terebinth Limited is led by experienced professionals who understand the importance of quality care and the responsibilities that come with it. Our leadership team provides clear direction, supports our staff and ensures that standards are met and maintained across all our homes. We are accountable to our residents, their families and the wider community. We work closely with local health and social care partners, regulators and commissioners to ensure our services meet the needs of those we serve."
         subdescription="Our commitment to improvement is ongoing. We invest in our staff, our facilities and our systems because Terebinth Limited aims to be a trusted name in residential care across the Fylde Coast."
         commitments={commitments}

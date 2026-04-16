@@ -37,7 +37,6 @@ import marinersBedroom from '@/assets/images/mariners-bedroom.jpg';
 import marinersBedroom2 from '@/assets/images/mariners-bedroom2.jpg';
 import marinersLounge from '@/assets/images/mariners-lounge.jpg';
 import Link from "next/link";
-import Script from 'next/script';
 
 
 export default function MarinersCourtPage() {
@@ -310,7 +309,7 @@ export default function MarinersCourtPage() {
             {
               icon: clockIcon,
               title: "Visiting & Family Involvement",
-              description: "Families are welcome to visit throughout the day, and we encourage involvement in care planning. Our South Shore location makes us easy to reach for families from across Blackpool and the Fylde Coast."
+              description: "Families are welcome to visit throughout the day, and we encourage involvement in care planning. Our Fleetwood location makes us easy to reach for families from across Blackpool and the Fylde Coast."
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"
@@ -372,6 +371,14 @@ export default function MarinersCourtPage() {
                     <li className="flex gap-3 items-center">
                     <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
                     <span className="text-[#6B7280] text-sm md:text-base">In-house chef</span>
+                    </li>
+                      <li className="flex gap-3 items-center">
+                    <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
+                    <span className="text-[#6B7280] text-sm md:text-base">Passengers Lift</span>
+                    </li>
+                     <li className="flex gap-3 items-center">
+                    <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
+                    <span className="text-[#6B7280] text-sm md:text-base">Stairs Lift</span>
                     </li>
                 </ul>
                 </div>

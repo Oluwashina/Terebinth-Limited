@@ -46,12 +46,12 @@ export default function DailyLifeSection({
             >
               {/* Icon */}
               <div className="mb-5">
-                <div className="bg-[#FAF8F4] w-11 h-11 flex items-center justify-center rounded-lg">
+                <div className="bg-[#F0E8D5] w-10 h-10 flex items-center justify-center rounded-full">
                   <Image
                     src={card.icon}
                     alt={card.title}
-                    width={20}
-                    height={20}
+                    width={18}
+                    height={18}
                   />
                 </div>
               </div>

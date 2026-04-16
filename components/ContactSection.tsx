@@ -102,8 +102,8 @@ export default function ContactSection() {
             {/* Address */}
             <div className="mb-10">
               <div className="flex items-start gap-6">
-                <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#F8FAFB] flex items-center justify-center shrink-0">
-                    <Image src={locationIcon} alt="Location Icon" width={24} height={24} />
+                <div className="rounded-full w-10 h-10 bg-[#F5EDD8] flex items-center justify-center shrink-0">
+                    <Image src={locationIcon} alt="Location Icon" width={18} height={18} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#1F2933] mb-2">Address</h3>
@@ -120,8 +120,8 @@ export default function ContactSection() {
             {/* Phone */}
             <div className="mb-10">
               <div className="flex items-start gap-4">
-                <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#F8FAFB] flex items-center justify-center shrink-0">
-                    <Image src={phoneIcon} alt="Phone Icon" width={24} height={24} />
+                <div className="rounded-full w-10 h-10 bg-[#F5EDD8] flex items-center justify-center shrink-0">
+                    <Image src={phoneIcon} alt="Phone Icon" width={18} height={18} />
                 </div>                
                 <div>
                   <h3 className="font-semibold text-[#1F1F1F] mb-2">Phone</h3>
@@ -138,8 +138,8 @@ export default function ContactSection() {
             {/* Email */}
             <div>
               <div className="flex items-start gap-4">
-                <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#F8FAFB] flex items-center justify-center shrink-0">
-                    <Image src={emailIcon} alt="Email Icon" width={24} height={24} />
+                <div className="rounded-full w-10 h-10 bg-[#F5EDD8] flex items-center justify-center shrink-0">
+                    <Image src={emailIcon} alt="Email Icon" width={18} height={18} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#1F2933] mb-2">Email</h3>
