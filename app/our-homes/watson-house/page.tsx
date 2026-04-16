@@ -44,7 +44,7 @@ export default function WatsonHousePage() {
     },
     {
       icon: accessibilityIcon,
-      title: 'Assessible Local Setting ',
+      title: 'Accessible Local Setting',
       description: 'Our South Shore location provides easy access for visiting families and connects residents to the familiar local community.'
     },
     {
@@ -123,7 +123,7 @@ export default function WatsonHousePage() {
           <AboutSection
             image={accommodationImg}
             title="Comfortable Accommodation in a Homely Setting"
-            label="ACCOMODATION"
+            label="ACCOMMODATION"
             descriptions={[
                 "Watson House offers nine single bedrooms over two floors, with en suite vanity units, alongside communal lounge and dining areas. Watson House is  accessible, safe, homely, and suitable for people’s needs."
             ]}
