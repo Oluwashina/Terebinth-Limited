@@ -46,7 +46,7 @@ export default function RedbricksPage() {
     },
     {
       icon: locationIcon,
-      title: 'Recognisable nearby Lamdmarks',
+      title: 'Recognisable nearby Landmarks',
       description: "The surrounding area includes Mary's Shell on Cleveleys beach and Marsh Mill in Thornton, both useful reference points for location-based directions and local familiarity for visiting families."
     },
   ];
@@ -103,14 +103,17 @@ export default function RedbricksPage() {
            <AboutSection
             image={redbricksAccomodation}
             title="Comfortable Accommodation in Compact Coastal Home"
-            label="ACCOMODATION"
+            label="ACCOMMODATION"
             descriptions={[
                 "Redbricks premises has an open-plan lounge/dining room, kitchen and laundry facilities, and nine single rooms with ensuite facilities across the ground and first floors. There is a passenger lift between floors. "
             ]}
              facilities={[
               "Private bedrooms with en-suite facilities",
-              "Accessible bathrooms and adapted facilities",
-              "Activity and quiet rooms",
+              "Comfortable lounges and communal areas",
+              "Dining area for shared meals",
+              "Garden and outdoor space",
+              "Visitors parking available",
+              "Passengers Lift"
             ]}
             buttonLabel="Arrange A Visit"
             buttonHref="/contact"

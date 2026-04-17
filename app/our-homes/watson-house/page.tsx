@@ -184,7 +184,7 @@ export default function WatsonHousePage() {
             image={watsonPersonalCareImg}
             label="CARE AND SUPPORT"
             title="Personal Care with Dignity at the Centre"
-            description="Watson House is registered to provide accommodation for persons who require nursing or personal cares  including adults over 65, adults under 65 and physical disabilities. The home’s website copy should position it as a residential care setting focused on day-to-day support, dignity and reassurance.  "
+            description="Watson House is registered to provide accommodation for persons who require nursing or personal care including adults over 65, adults under 65 and physical disabilities."
             specialisms={[
                 'ADULTS OVER 65',
                 'ADULTS UNDER 65',
