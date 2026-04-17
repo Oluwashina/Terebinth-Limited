@@ -19,13 +19,11 @@ export default function Navbar() {
     { label: 'Contact', href: '/contact' },
   ];
 
-   const isActive = (href: string) => {
-    // For Home, check if on root
-    if (href === '/' && pathname === '/') return true;
-    // For hash links, check if pathname contains the text
-    if (href.startsWith('#')) return false;
-    return pathname === href;
-  };
+  const isActive = (href: string) => {
+  if (href === '/') return pathname === '/';
+  if (href.startsWith('#')) return false;
+  return pathname.startsWith(href);
+};
 
   return (
     <>
