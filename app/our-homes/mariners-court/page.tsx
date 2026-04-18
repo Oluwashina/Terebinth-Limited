@@ -374,7 +374,7 @@ export default function MarinersCourtPage() {
                     </li>
                       <li className="flex gap-3 items-center">
                     <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
-                    <span className="text-[#6B7280] text-sm md:text-base">Passengers Lift</span>
+                    <span className="text-[#6B7280] text-sm md:text-base">Passenger Lift</span>
                     </li>
                      <li className="flex gap-3 items-center">
                     <Image src={checkboxCircleIcon} alt="✓" width={20} height={20} />
