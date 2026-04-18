@@ -113,7 +113,7 @@ export default function RedbricksPage() {
               "Dining area for shared meals",
               "Garden and outdoor space",
               "Visitors parking available",
-              "Passengers Lift"
+              "Passenger Lift"
             ]}
             buttonLabel="Arrange A Visit"
             buttonHref="/contact"

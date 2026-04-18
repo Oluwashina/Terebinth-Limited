@@ -133,7 +133,7 @@ export default function WatsonHousePage() {
               "Dining area for shared meals",
               "Garden and outdoor space",
               "Visitors parking available",
-              "Passengers Lift"
+              "Stairs Lift"
             ]}
             buttonLabel="Arrange A Visit"
             buttonHref="/contact"
