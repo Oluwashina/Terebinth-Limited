@@ -60,8 +60,8 @@ export default function ContactLocationSection({
             {/* Address */}
             <div className="flex gap-4 mb-6">
              
-             <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#FFFFFF] flex items-center justify-center shrink-0">
-                    <Image src={locationIcon} alt="Location Icon" width={24} height={24} />
+             <div className="w-10 h-10 bg-[#FAF8F4] rounded-full flex items-center justify-center shrink-0">
+                    <Image src={locationIcon} alt="Location Icon" width={18} height={18} />
                 </div>
               <div>
                 <h3 className="font-semibold text-[#1F2933] mb-1">Address</h3>
@@ -81,8 +81,8 @@ export default function ContactLocationSection({
 
             {/* Telephone */}
             <div className="flex gap-4 mb-6">
-                <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#FFFFFF] flex items-center justify-center shrink-0">
-                    <Image src={phoneIcon} alt="Phone Icon" width={24} height={24} />
+                <div className="w-10 h-10 bg-[#FAF8F4] rounded-full flex items-center justify-center shrink-0">
+                    <Image src={phoneIcon} alt="Phone Icon" width={18} height={18} />
                 </div>
               <div>
                 <h3 className="font-semibold text-[#1F2933] mb-1">Telephone</h3>
@@ -102,8 +102,8 @@ export default function ContactLocationSection({
 
             {/* Email */}
             <div className="flex gap-4 mb-8">
-              <div className="border-[0.8px] border-[#E5E7EB] rounded-lg w-14 h-14 bg-[#FFFFFF] flex items-center justify-center shrink-0">
-                    <Image src={emailIcon} alt="Email Icon" width={24} height={24} />
+              <div className="w-10 h-10 bg-[#FAF8F4] rounded-full flex items-center justify-center shrink-0">
+                    <Image src={emailIcon} alt="Email Icon" width={18} height={18} />
                 </div>
               <div>
                 <h3 className="font-semibold text-[#1F2933] mb-1">Email</h3>

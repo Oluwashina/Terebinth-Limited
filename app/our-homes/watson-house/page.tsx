@@ -27,6 +27,9 @@ import watson_Img3 from '@/assets/images/watson_img3.jpg';
 import watson_Img4 from '@/assets/images/watson_img4.jpg';
 import Image from "next/image";
 import Link from "next/link";
+import FeesAndFundingSection from "@/components/FeesAndFundingSection";
+import feesImage from '@/assets/images/fee_fundingImg.jpg';
+
 
 
 export default function WatsonHousePage() {
@@ -263,6 +266,12 @@ export default function WatsonHousePage() {
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"
+        />
+
+         <FeesAndFundingSection
+          image={feesImage}
+          homeName="Watson House Rest Home"
+          backgroundColor="bg-[#FAF8F4]"
         />
 
         <ContactLocationSection

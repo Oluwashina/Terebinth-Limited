@@ -24,6 +24,8 @@ import activitiesArea from '@/assets/images/activitiesArea.jpg';
 import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
 import DailyLifeSection from "@/components/DailyLifeSection";
 import GallerySection from "@/components/GallerySection";
+import FeesAndFundingSection from "@/components/FeesAndFundingSection";
+import feesImage from '@/assets/images/fee_fundingImg.jpg';
 import ContactLocationSection from "@/components/ContactLocationSection";
 
 export default function RedbricksPage() {
@@ -217,6 +219,12 @@ export default function RedbricksPage() {
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"
+        />
+
+        <FeesAndFundingSection
+          image={feesImage}
+          homeName="Redbricks Care Home"
+          backgroundColor="bg-[#FAF8F4]"
         />
 
         <ContactLocationSection

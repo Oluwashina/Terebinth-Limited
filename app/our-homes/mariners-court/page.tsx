@@ -37,6 +37,8 @@ import marinersBedroom from '@/assets/images/mariners-bedroom.jpg';
 import marinersBedroom2 from '@/assets/images/mariners-bedroom2.jpg';
 import marinersLounge from '@/assets/images/mariners-lounge.jpg';
 import Link from "next/link";
+import FeesAndFundingSection from "@/components/FeesAndFundingSection";
+import feesImage from '@/assets/images/fee_fundingImg.jpg';
 
 
 export default function MarinersCourtPage() {
@@ -460,6 +462,12 @@ export default function MarinersCourtPage() {
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"
+        />
+
+          <FeesAndFundingSection
+          image={feesImage}
+          homeName="Mariners Court Care Home"
+          backgroundColor="bg-[#FAF8F4]"
         />
 
          <ContactLocationSection
