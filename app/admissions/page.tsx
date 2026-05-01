@@ -138,6 +138,7 @@ export default function AdmissionsPage() {
 
      <CTASection
         title="Talk to Us About Care For Your Loved Ones"
+        label='GET IN TOUCH'
         description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
         buttons={[
             {

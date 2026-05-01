@@ -156,6 +156,7 @@ export default function AboutPage() {
 
       <CTASection
             title="Find Out More About Our Homes"
+              label='discover our homes'
             description="Explore our homes across the Fylde Coast and learn more about the care environments we are building for residents and families"
             buttons={[
               {

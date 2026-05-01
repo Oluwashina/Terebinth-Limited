@@ -1,6 +1,7 @@
 import HeroSection from '@/components/HeroSection';
 import ContactSection from '@/components/ContactSection';
 import contactImage from '@/assets/images/heroImage.jpg'
+import CTASection from '@/components/CTASection';
 
 export default function ContactPage() {
   return (
@@ -20,6 +21,24 @@ export default function ContactPage() {
       />
       
       <ContactSection />
+
+       <CTASection
+        title="Talk to Us About Care For Your Loved Ones"
+        label='GET IN TOUCH'
+        description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
+        buttons={[
+            {
+            label: 'Arrange a Family Enquiry',
+            href: '/contact',
+            variant: 'solid',
+            },
+            {
+            label: 'Make A Referral ',
+            href: '/referral',
+                variant: 'outline',
+                },
+            ]}
+        />
     
     </div>
   );

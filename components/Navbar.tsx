@@ -16,6 +16,7 @@ export default function Navbar() {
     { label: 'About Us', href: '/about' },
     { label: 'Our Homes', href: '/our-homes' },
     { label: 'Admissions', href: '/admissions' },
+    { label: 'Referral', href: '/referral' },
     { label: 'Contact', href: '/contact' },
   ];
 

@@ -284,6 +284,7 @@ export default function Home() {
       <TestimonialsSection testimonials={testimonials} />
 
       <CTASection
+        label="GET IN TOUCH"
         title="Talk to Us About Care For Your Loved Ones"
         description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
         buttons={[

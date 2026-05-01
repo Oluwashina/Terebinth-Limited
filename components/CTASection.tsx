@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 export interface CTASectionProps {
   title: string;
+  label: string;
   description: string;
   buttons: Array<{
     label: string;
@@ -13,14 +14,23 @@ export interface CTASectionProps {
 export default function CTASection({
   title,
   description,
+  label,
   buttons,
 }: CTASectionProps) {
   return (
     <section className="bg-[#AC9556] py-16 sm:py-20 lg:py-24">
       <div className="max-w-4xl mx-auto px-6 sm:px-12 lg:px-20">
         <div className="flex flex-col items-center text-center">
+          
+          {/* label */}
+          {label && (
+            <span className="text-xs font-semibold text-[#FFFFFF] uppercase mb-2">
+              {label}
+            </span>
+          )}
+
           {/* Title */}
-          <h2 className="text-3xl sm:text-3xl max-w-lg lg:text-4xl font-bold text-[#F7F4EE] mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl max-w-lg lg:text-4xl font-bold text-[#F7F4EE] mb-6 leading-tight">
             {title}
           </h2>
 
