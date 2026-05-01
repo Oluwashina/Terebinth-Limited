@@ -1,18 +1,15 @@
 import HeroSection from "@/components/HeroSection";
 import HeroImage from '@/assets/images/heroImage.jpg'
 import CTASection from "@/components/CTASection";
-import StatsSection from "@/components/StatsSection";
 import { StaticImageData } from 'next/image';
 import redbricsImage from '@/assets/images/redbricks.jpg';
 import watsonImage from '@/assets/images/watson-house.jpg';
 import marinersImage from '@/assets/images/mariners-court.jpg';
-import starIcon from '@/assets/icons/star.svg';
 import checkboxIcon from '@/assets/icons/checkbox.svg';
 import aboutImage from '@/assets/images/about.jpg';
 import heartIcon from '@/assets/icons/heart.svg';
 import medalIcon from '@/assets/icons/medal.svg';
 import trendIcon from '@/assets/icons/trend.svg';
-import shola from '@/assets/images/shola-ogunleye.jpg';
 import shieldIcon from '@/assets/icons/shield.svg';
 import locationIcon from '@/assets/icons/map.svg';
 import personIcon from '@/assets/icons/person.svg';
@@ -21,8 +18,9 @@ import AboutSection from "@/components/AboutSection";
 import ValuesSection from "@/components/ValuesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import LeadershipProfileSection from "@/components/LeadershipProfileSection";
 import RatingsSection from "@/components/RatingsSection";
+import WWhoWeSupportSection from "@/components/WhoWeSupport";
+import RegulationStatusSection from "@/components/RegulationStatusSection";
 
 
 
@@ -188,33 +186,19 @@ export default function Home() {
         description="At Terebinth Limited, we provide safe, respectful and person-centred residential care in homes across Blackpool, Thornton-Cleveleys and Fleetwood. Our focus is on dignity, wellbeing and creating environments where residents feel supported and families feel reassured."
         buttons={[
           {
-            label: 'Explore Our Homes ',
-            href: '/our-homes',
+            label: 'Arrange a Family Enquiry',
+            href: '/contact',
             variant: 'solid',
           },
           {
-            label: 'Contact Us',
-            href: '/contact',
+            label: 'Make A Professional Referral',
+            href: '/referral',
             variant: 'outline',
           },
         ]}
       />
-      <StatsSection
-        stats={[
-          { number: '3', label: 'Care Homes' },
-          { number: '100%', label: 'Fylde Coast' },
-          { number: '★★★★★', label: 'Family Reviews' },
-          { number: '24/7', label: 'On-Site Support' },
-        ]}
-        badges={[
-          { icon: starIcon, text: 'CQC Registered Provider', textColor: '[#6B7280]' },
-          { text: 'All homes inspected & compliant', textColor: '[#AD9451]' },
-          { icon: checkboxIcon, text: 'Established care provider', textColor: '[#6B7280]' },
-          { text: 'Fylde Coast community', textColor: '[#AD9451]' },
-        ]}
-      />
-      <CareHomesSection homes={careHomes} />
-      <AboutSection
+
+       <AboutSection
         image={aboutImage}
         label="About Us"
         title="A Trusted Local Care Provider"
@@ -224,45 +208,24 @@ export default function Home() {
         ]}
         buttonLabel="Read More"
         buttonHref="/about"
+        bgColor="bg-[#F8FAFB]"
       />
 
-      <RatingsSection
-          cqc={{
-            rating: "GOOD",
-            ratingColor: "bg-[#4CAF50]",
-            lastUpdate: "31st March 2025",
-            reportUrl: "https://www.cqc.org.uk/location/1-16958494954",
-          }}
-          careHomeReview={{
-            homeName: "Redbricks Care Home",
-            score: 8.9,
-            reviewsUrl: "http://carehome.co.uk/carehome.cfm/searchazref/78047",
-          }}
-        />
-
-      <ValuesSection 
+      <RegulationStatusSection />
+  
+       <ValuesSection 
         label="Our Values"
         title="What Drives Our Care"
         subtitle="These values guide everything we do and shape the culture of care across all our homes."
         values={values}
+        bgColor="bg-[#F8F6F3]"
        />
 
-         <LeadershipProfileSection
-            profileImage={shola}
-            profileName="Shola Ogunleye"
-            label="OUR LEADERSHIP"
-            title="Meet Shola Ogunleye, Our Director"
-            descriptions={[
-                "As a Director at Terebinth Limited, I oversee regulated residential care services across the Fylde Coast. My focus is on building safe, well-led, and person-centred care homes that thrive on clear operational controls and continuous improvement.",
-                "I bring a diverse professional background spanning complex operations, procurement, project delivery, and risk management. Today, I apply that commercial and strategic breadth to the care sector—ensuring our facilities not only meet rigorous CQC standards but operate sustainably in a challenging economic landscape. Currently, I am driving the development and operational ramp-up of specialist residential services, bridging the gap between local authority commissioning needs and high-quality care delivery."
-            ]}
-            quote={{
-                text: "At Redbricks Care Home we're not just providing care – we're creating a home where people feel respected, supported, and genuinely cared for. It's a privilege to lead such a dedicated team.",
-                attribution: "[Shola Ogunleye], Director"
-            }}
-         />
+       <WWhoWeSupportSection />
 
-        <WhyChooseUsSection
+      <CareHomesSection homes={careHomes} />
+    
+       <WhyChooseUsSection
         label="Why Choose Us"
         title="Why Families Choose Terebinth Limited"
         subtitle="Choosing care is a significant decision. We aim to make that decision easier by providing homes that combine warmth, structure and a clear commitment to respectful support."
@@ -281,6 +244,20 @@ export default function Home() {
         ]}
       />
 
+      <RatingsSection
+          cqc={{
+            rating: "GOOD",
+            ratingColor: "bg-[#4CAF50]",
+            lastUpdate: "31st March 2025",
+            reportUrl: "https://www.cqc.org.uk/location/1-16958494954",
+          }}
+          careHomeReview={{
+            homeName: "Redbricks Care Home",
+            score: 8.9,
+            reviewsUrl: "http://carehome.co.uk/carehome.cfm/searchazref/78047",
+          }}
+        />
+
       <TestimonialsSection testimonials={testimonials} />
 
       <CTASection
@@ -289,13 +266,13 @@ export default function Home() {
         description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
         buttons={[
           {
-            label: 'Speak to Our Team',
+            label: 'Arrange a Family Enquiry',
             href: '/contact',
             variant: 'solid',
           },
           {
-            label: 'Arrange an Enquiry',
-            href: '/contact',
+            label: 'Make A Referral ',
+            href: '/referral',
             variant: 'outline',
           },
         ]}

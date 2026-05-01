@@ -14,7 +14,7 @@ export default function MissionSection({
   attribution,
 }: MissionSectionProps) {
   return (
-    <section className="bg-[#342A13] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
+    <section className="bg-[#342A13] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20 md:rounded-tr-[100px] md:rounded-bl-[100px]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Side */}

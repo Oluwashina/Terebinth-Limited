@@ -20,14 +20,29 @@ export default function TestimonialsSection({
     <section className="bg-[#F8FAFB] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-12 lg:mb-14">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
-            Family Voices
-          </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
-            Trusted by Families <br />
-            Across the Fylde Coast
-          </h2>
+        <div className='flex justify-between items-center'>
+          <div className="mb-12 sm:mb-12 lg:mb-14">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+              Family Voices
+            </p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
+              Trusted by Families <br />
+              Across the Fylde Coast
+            </h2>
+
+            <p className="text-[#6B7280] text-sm sm:text-[15px]">
+             Trusted by families across the Fylde Coast for compassionate, professional care.
+            </p>
+          </div>
+
+          {/* <div>
+              <Link
+              href="/testimonials"
+              className="inline-block bg-[#AD9451] hover:bg-[#8B6D3C] text-white text-sm font-medium px-10 py-3 rounded-full transition"
+            >
+              Read More
+            </Link>
+          </div> */}
         </div>
 
         {/* Testimonials Grid */}

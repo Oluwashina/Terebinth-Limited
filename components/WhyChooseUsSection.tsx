@@ -34,14 +34,14 @@ export default function WhyChooseUsSection({
     <section className="bg-[#FAF8F4] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 lg:mb-16">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
+        <div className="mb-12 sm:mb-16 lg:mb-16">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#AD9451] mb-3">
             {label}
           </p>
-          <h2 className="text-2xl max-w-xl mx-auto sm:text-3xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-3xl max-w-xl lg:text-4xl font-bold text-[#1F2933] mb-4 leading-tight">
             {title}
           </h2>
-          <p className="text-[#6B7280] max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+          <p className="text-[#6B7280] text-base sm:text-base max-w-2xl leading-relaxed">
             {subtitle}
           </p>
         </div>

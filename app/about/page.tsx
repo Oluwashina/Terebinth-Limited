@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import aboutImage from '@/assets/images/about.jpg';
+import terebinthImg from '@/assets/images/terebinthImg.jpg';
 import aboutHeroImage from '@/assets/images/heroImage.jpg'
 import HeroSection from "@/components/HeroSection";
 import ApproachSection from "@/components/ApproachSection";
@@ -11,8 +12,14 @@ import personIcon from '@/assets/icons/person.svg';
 import medalIcon from '@/assets/icons/medal.svg';
 import checkboxIcon from '@/assets/icons/checkbox.svg';
 import MissionSection from "@/components/MisssionSection";
-import ValuesSection from "@/components/ValuesSection";
+import shola from '@/assets/images/shola-ogunleye.jpg';
+import familyImg from '@/assets/images/families.jpg';
+import admissionStepsImage from '@/assets/images/admission-steps.jpg'
 import LeadershipSection from "@/components/LeadershipSection";
+import LeadershipProfileSection from "@/components/LeadershipProfileSection";
+import CommitmentSection from "@/components/FamilyCommitmment";
+import GovernanceQualitySection from "@/components/GovernanceQualitySection";
+
 
 export default function AboutPage() {
 
@@ -118,10 +125,119 @@ export default function AboutPage() {
           'Our team is dedicated to creating safe, warm and respectful environments where residents can lead their best lives while receiving the support they need. We understand the importance of trust when choosing a care home.' ,
           'As a growing organisation, we remain committed to maintaining the highest standards of care across all our homes — ensuring consistency, quality and compassion in everything we do.'
         ]}
-        buttonLabel="Make Enquiries"
-        buttonHref="/contact"
-        imageButton={{ label: "Serving the Fylde Coast", href: "/about" }}
+        buttonLabel="Read More"
+        buttonHref="/our-homes"
       />
+
+         <AboutSection
+        image={terebinthImg}
+        title="Why Choose Terebinth Limited "
+        label="Our Story"
+        descriptions={[
+          'Terebinth Limited is a Fylde Coast care provider built on a straightforward principle: residential care should combine compassion with professionalism, warmth with clear accountability, and everyday support with genuine respect for the people being cared for. We operate three residential care homes across Blackpool, Thornton-Cleveleys, and Fleetwood. Our local presence gives us a practical understanding of the communities we serve and makes visiting easier for families across the Fylde Coast. Each home is registered with the Care Quality Commission and operates under experienced local management.',
+          "What sets us apart is our focus on doing care properly. We value clear leadership, honest communication, and a culture where residents are treated as individuals. We're not the largest provider, but we aim to be dependable, transparent, and committed to continuous improvement. Our aim is to build services that families can trust and that residents genuinely feel at home in."
+        ]}
+        buttonLabel="Read More"
+        buttonHref="/our-homes"
+        imagePosition="right"
+      />
+
+      <GovernanceQualitySection
+  label="GOVERNANCE AND QUALITY"
+  title="Our Approach to Governance and Quality"
+  description="At Terebinth Limited, governance and quality assurance are embedded into everything we do. We combine experienced leadership with structured processes to ensure our homes meet regulatory requirements, maintain safe environments, and deliver person-centred care."
+  cards={[
+    {
+      icon: shieldIcon,
+      title: 'CQC Registration & Compliance',
+      description: 'All our homes are registered with the Care Quality Commission and operate under experienced Managers who understand regulatory standards and best practice.',
+    },
+    {
+      icon: checkboxIcon,
+      title: 'Quality Monitoring Systems',
+      description: 'We use structured quality assurance processes, regular audits, and care plan reviews to ensure standards are maintained and improvements are identified and acted upon.',
+    },
+    {
+      icon: trendIcon,
+      title: 'Continuous Improvement Culture',
+      description: 'We regularly review our practices, learn from feedback and implement improvements. Quality care means never standing still — it means always striving to do better for our residents.',
+    },
+  ]}
+/>
+
+
+    <LeadershipProfileSection
+            profileImage={shola}
+            profileName="Shola Ogunleye"
+            label="OUR LEADERSHIP"
+            title="Meet Shola Ogunleye, Our Director"
+            descriptions={[
+                "As a Director at Terebinth Limited, I oversee regulated residential care services across the Fylde Coast. My focus is on building safe, well-led, and person-centred care homes that thrive on clear operational controls and continuous improvement.",
+                "I bring a diverse professional background spanning complex operations, procurement, project delivery, and risk management. Today, I apply that commercial and strategic breadth to the care sector—ensuring our facilities not only meet rigorous CQC standards but operate sustainably in a challenging economic landscape. Currently, I am driving the development and operational ramp-up of specialist residential services, bridging the gap between local authority commissioning needs and high-quality care delivery."
+            ]}
+            quote={{
+                text: "Raising the standard of adult social care requires more than just compassion; it demands robust governance, commercial discipline and a relentless focus on quality. This is what we are about",
+                attribution: "[Shola Ogunleye], Director"
+            }}
+         />
+
+         <CommitmentSection
+          label="OUR COMMITMENT TO FAMILIES"
+          title="How We Work with Families"
+          description="We believe good care is built on strong partnerships with families, and with the people we support."
+          items={[
+            {
+              title: 'Open Communication',
+              description: 'We keep families informed about their loved one\'s well-being, care plans, and any changes. We believe families should never be left in the dark.',
+            },
+            {
+              title: 'Involvement in Care Planning',
+              description: 'Families are invited to contribute to care plans and share insights about preferences, routines, and what makes their loved one comfortable.',
+            },
+            {
+              title: 'Visiting & Accessibility',
+              description: 'We welcome family visits and understand how important it is for families to stay connected with their loved ones.',
+            },
+            {
+              title: 'Transparent Admissions',
+              description: 'From the first enquiry through to admission, we aim to make the process clear, supportive, and respectful.',
+            },
+          ]}
+          buttonLabel="Arrange a Family Enquiry"
+          buttonHref="/contact"
+          imageSrc={familyImg}
+          imageAlt="Family visit at care home"
+          imagePosition="right"
+        />
+
+         <CommitmentSection
+          label="Our commitment to professionals"
+          title="How We Work with Professionals"
+          description="We believe good care is built on strong partnerships with professionals, and with the people we support."
+          items={[
+            {
+              title: 'Rapid Referral Response',
+              description: 'We offer same-day referral reviews and a 24-hour pre-admission assessment guarantee to help prevent delayed discharges.',
+            },
+            {
+              title: 'Bed Availability',
+              description: 'We provide regular updates on current vacancies across our three homes to support effective brokerage and placement planning.',
+            },
+            {
+              title: 'Clear Clinical Criteria',
+              description: 'We\'re upfront about what we can and cannot support, helping professionals make appropriate referrals without wasted time.',
+            },
+            {
+              title: 'Collaborative Admission',
+              description: 'We work closely with discharge teams, social workers, and commissioners to ensure smooth, well-coordinated placements.',
+            },
+          ]}
+          buttonLabel="Make a Referral"
+          buttonHref="/referral"
+          imageSrc={admissionStepsImage}
+          imageAlt="Family visit at care home"
+          imagePosition="left"
+        />
 
        <ApproachSection
         label="Our Principles"
@@ -136,13 +252,6 @@ export default function AboutPage() {
         description="Our mission is to provide safe, compassionate and well-led residential care that protects dignity, supports wellbeing and gives families confidence. We want our homes to be places where people feel secure, supported and respected. We also recognise that quality care depends on clear standards, responsible leadership and a commitment to continuous improvement. Our mission is therefore not only to provide care, but to build services that are trusted, accountable and sustainable."
         mission="Our mission is therefore not only to provide care, but to build services that are trusted, accountable and sustainable."
         attribution="Terebinth Limited — Mission Statement"
-      />
-
-     <ValuesSection 
-        label="Our Values"
-        title="What We Stand For"
-        subtitle="These values shape the culture of care across all our homes and guide every member of our team."
-        values={values}
       />
 
       <LeadershipSection

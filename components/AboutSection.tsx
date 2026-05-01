@@ -89,7 +89,7 @@ export default function AboutSection({
 
       <Link
         href={buttonHref}
-        className="inline-block bg-[#AD9451] text-white px-10 py-4 text-sm rounded-full font-medium hover:bg-[#8B6D3C] transition"
+        className="inline-block bg-[#AD9451] text-white px-8 py-3 text-sm rounded-full font-medium hover:bg-[#8B6D3C] transition"
       >
         {buttonLabel}
       </Link>
