@@ -20,7 +20,7 @@ export default function CommitmentSection({
   cards,
 }: CommitmentSectionProps) {
   return (
-    <section className="bg-[#2B271E] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
+    <section className="bg-[#2B271E] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20 md:rounded-bl-[100px] md:rounded-tr-[100px]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Side - Content */}

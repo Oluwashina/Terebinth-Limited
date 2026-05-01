@@ -12,6 +12,7 @@ import shieldIcon from '@/assets/icons/shield.svg';
 import trendIcon from '@/assets/icons/trend.svg';
 import checkboxIcon from '@/assets/icons/checkbox.svg';
 import websiteIcon from '@/assets/icons/website.svg';
+import HomesEnquiryCTASection from "@/components/HomesEnquiryCTASection";
 
 export default function OurHomesPage() {
  return (
@@ -32,6 +33,10 @@ export default function OurHomesPage() {
       />
 
      <HomeDetailsSection 
+            badge={{
+            text: 'CQC Registered',
+            color: 'bg-[#DBEAFE] text-[#193CB8]',
+           }}
             location="THORNTON-CLEVELEYS"
             homeTitle="Redbricks Care Home"
             address="512 Queens Promenade Thornton-Cleveleys, FY5 1PQ"
@@ -41,13 +46,11 @@ export default function OurHomesPage() {
                 "Redbricks Care Home is part of the growing Fylde Coast care network. Located in Thornton-Cleveleys, the home reflects our commitment to providing safe and compassionate residential support in a warm and well-managed environment.",
                 "Residents at Redbricks benefit from a caring team, regular activities and strong community connections that help maintain quality of life."
             ]}
-            features={[
-                { text: "Safe, well-equipped care environment" },
-                { text: "Compassionate support staff" },
-                { text: "Experienced management team" },
-                { text: "Regular activities and engagement" },
-                { text: "Community connections and outings" }
-            ]}
+            contact={{
+                title: 'Contact Redbricks Care Home',
+                phone: '01253 854008',
+                email: 'redbrickscarehome@terebinthltd.com',
+            }}
             viewButtonLabel="View Redbricks"
             viewButtonHref="/our-homes/redbricks"
             bookButtonLabel="Arrange A Visit"
@@ -57,6 +60,10 @@ export default function OurHomesPage() {
          />
 
      <HomeDetailsSection 
+       badge={{
+            text: 'CQC Good',
+            color: 'bg-[#DCFCE7] text-[#016630]',
+           }}
         location="BLACKPOOL"
         homeTitle="Watson House Rest Home"
         address="50 Station Road, Blackpool, FY4 1EU"
@@ -66,13 +73,11 @@ export default function OurHomesPage() {
             "Watson House Rest Home is a welcoming residential care setting within the Terebinth Limited group. Located in Blackpool, the home provides respectful and supportive day-to-day care for residents who require assistance with personal care and daily living activities.",
             "Our experienced team creates a comfortable and safe environment where residents feel valued, supported and at home."
         ]}
-        features={[
-            { text: "Comfortable, well-maintained rooms" },
-            { text: "Respectful, person-centred support" },
-            { text: "Experienced and supervised care team" },
-            { text: "Safe, supportive environment" },
-            { text: "Family visits welcomed at all times" }
-        ]}
+        contact={{
+            title: 'Contact Watson House',
+            phone: '01253 341550',
+            email: 'watsonhousecare@live.co.uk',
+        }}
         viewButtonLabel="View Watson"
         viewButtonHref="/our-homes/watson-house"
         bookButtonLabel="Arrange A Visit"
@@ -82,6 +87,10 @@ export default function OurHomesPage() {
         />
 
          <HomeDetailsSection 
+           badge={{
+            text: 'CQC Registered',
+            color: 'bg-[#DBEAFE] text-[#193CB8]',
+           }}
             location="FLEETWOOD"
             homeTitle="Mariners Court Care Home"
             address="45-46 Laidleys Walk Fleetwood, FY7 7JL"
@@ -91,13 +100,12 @@ export default function OurHomesPage() {
                 "Mariners Court Care Home is our Fleetwood-based residential service. The home is focused on creating a comfortable and well-managed environment for residents, with a clear emphasis on respect, safety and quality day-to-day support.",
                 "Our team at Mariners Court is trained, supervised and dedicated to providing a consistent, dignified and responsive care experience for every resident."
             ]}
-            features={[
-                { text: "Well-managed residential setting" },
-                { text: "Focus on comfort and dignity" },
-                { text: "Trained and supervised staff" },
-                { text: "Local community links" },
-                { text: "Responsive, person-centred approach" }
-            ]}
+             contact={{
+            title: 'Contact Mariners Court ',
+            phone: '01253 872493',
+            altPhone: '07960 485280',
+            email: 'marinerscourt@terebinthltd.com',
+        }}
             viewButtonLabel="View Mariners"
             viewButtonHref="/our-homes/mariners-court"
             bookButtonLabel="Arrange A Visit"
@@ -145,23 +153,30 @@ export default function OurHomesPage() {
          ]}
         />
 
-    <CTASection
-        title="Speak to Us About Our Homes"
-        label='GET IN TOUCH'
-        description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
-        buttons={[
-          {
-            label: 'Speak to Our Team',
-            href: '/contact',
-            variant: 'solid',
-          },
-          {
-            label: 'View Our Homes',
-            href: '/our-homes',
-            variant: 'outline',
-          },
+        <HomesEnquiryCTASection
+        label="GET IN TOUCH"
+        title="Speak To Us About Our Homes"
+        description="If you would like to know more about any of our homes, discuss suitability, or ask about current availability, we welcome your enquiry."
+        cards={[
+            {
+            icon: heartIcon,
+            title: 'For Families',
+            description: 'Arrange a visit, discuss care needs, or ask about admissions for yourself or a loved one.',
+            buttonLabel: 'Make Family Enquiry',
+            buttonHref: '/contact',
+            },
+            {
+            icon: personIcon,
+            title: 'For Professionals',
+            description: 'Submit referrals, check bed availability, or discuss placement criteria with our team.',
+            buttonLabel: 'Make Professional Referral',
+            buttonHref: '/referral',
+            },
         ]}
-      />
+        backgroundColor="bg-[#FAF8F4]"
+        />
+
+
     </div>
     );
 }

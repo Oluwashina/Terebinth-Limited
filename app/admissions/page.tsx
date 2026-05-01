@@ -5,10 +5,14 @@ import CTASection from "@/components/CTASection";
 import AdmissionStepsSection from "@/components/AdmissionStepsSection";
 import admissionStepsImage from '@/assets/images/admission-steps.jpg'
 import heartIcon from '@/assets/icons/heart.svg';
+import callIcon from '@/assets/icons/call.svg';
 import personIcon from '@/assets/icons/person.svg';
 import shieldIcon from '@/assets/icons/shield.svg';
+import medalIcon from '@/assets/icons/medal.svg';
 import CommitmentSection from "@/components/CommitmentSection";
 import FAQSection from "@/components/FAQSection";
+import AdmissionPathway from "@/components/AdmissionPathway";
+import InformationNeededSection from "@/components/InformationNeededSection";
 
 
 export default function AdmissionsPage() {
@@ -48,6 +52,29 @@ export default function AdmissionsPage() {
             }}
        />
 
+         <AdmissionPathway
+        label="Your Journey starts here"
+        title="Choose Your Pathway"
+        description="We've created dedicated routes for families and professionals to ensure you get the right support and information for your specific needs."
+        cards={[
+            {
+            icon: heartIcon,
+            title: 'For Families',
+            description: "Choosing a care home is one of the hardest decisions you'll make. We understand that, and we're here to support you every step of the way.",
+            buttonLabel: 'Make Enquiries',
+            buttonHref: '/contact',
+            },
+            {
+            icon: personIcon,
+            title: 'For Professionals',
+            description: "We work with Social Workers, NHS Discharge Teams, and Commissioners to provide fast, transparent, and responsive admissions.",
+            buttonLabel: 'Make Referral',
+            buttonHref: '/referral',
+            },
+        ]}
+        backgroundColor="bg-[#FAF8F4]"
+        />
+
        <AdmissionStepsSection
             label="THE ADMISSION PROCESS"
             title="From First Contact to Admissions"
@@ -76,6 +103,53 @@ export default function AdmissionsPage() {
                 }
             ]}
       />
+
+       <InformationNeededSection
+            label="DOCUMENTS AND DETAILS"
+            title="Information We Need"
+            description="To provide the best possible care, we'll need some key information about your loved one. Don't worry if you don't have everything straight away — we can work through this together."
+            cards={[
+                {
+                icon: shieldIcon,
+                title: 'Personal and Medical Information',
+                items: [
+                    { text: 'Full name, date of birth, and NHS number' },
+                    { text: 'Medical history and current medications' },
+                    { text: 'GP and other healthcare provider details' },
+                    { text: 'Any diagnosis or ongoing health conditions' },
+                ],
+                },
+                {
+                icon: heartIcon,
+                title: 'Care Needs and Preference',
+                items: [
+                    { text: 'Daily life needs' },
+                    { text: 'Dietary requirement and preferences' },
+                    { text: 'Activities, hobbies, and interest' },
+                    { text: 'Religious, cultural, or language needs' },
+                ],
+                },
+                {
+                icon: medalIcon,
+                title: 'Funding Information',
+                items: [
+                    { text: 'Local Authority funding status' },
+                    { text: 'Self funding or top-up arrangement' },
+                    { text: 'Contact Details for social workers' },
+                ],
+                },
+                {
+                icon: callIcon,
+                title: 'Emergency Contacts',
+                items: [
+                    { text: 'Next of kin and family contact details' },
+                    { text: 'Power of attorney information' },
+                    { text: 'Preferred method of communication' },
+                    { text: 'Emergency contact number' },
+                ],
+                },
+            ]}
+        />
 
       <CommitmentSection
         label="WHAT TO EXPECT"
@@ -137,21 +211,17 @@ export default function AdmissionsPage() {
       />
 
      <CTASection
-        title="Talk to Us About Care For Your Loved Ones"
+        title="Making a Professional Referral?"
         label='GET IN TOUCH'
-        description="If you are exploring residential care for yourself or a loved one, we are here to help. We understand that finding the right care setting is an important decision, and we are committed to offering a professional, respectful and supportive first conversation."
+        description="If you're a Social Worker, NHS Discharge Coordinator, or Local Authority Commissioner, visit our dedicated Referrals Portal for fast-track admissions support."
         buttons={[
             {
-            label: 'Speak to Our Team',
-            href: '/contact',
+            label: 'Make Referral',
+            href: '/referral',
             variant: 'solid',
             },
-            {
-            label: 'Arrange an Enquiry',
-            href: '/contact',
-                variant: 'outline',
-                },
-            ]}
+            ]
+          }
         />
     </div>
     );

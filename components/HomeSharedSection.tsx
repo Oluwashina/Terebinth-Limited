@@ -20,7 +20,7 @@ export default function HomesSharedSection({
   features,
 }: HomesSharedSectionProps) {
   return (
-    <section className="bg-[#2B271E] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20">
+    <section className="bg-[#2B271E] py-16 sm:py-20 lg:py-20 px-6 sm:px-12 lg:px-20 md:rounded-tr-[100px] md:rounded-bl-[100px]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-12">
