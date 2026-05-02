@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Image from "next/image";
+import quoteIcon from "../assets/icons/quote.svg";
 
 export interface Testimonial {
   id: string;
@@ -46,23 +47,17 @@ export default function TestimonialsSection({
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white border-[0.8px] border-[#E5E7EB] p-8 rounded-sm hover:shadow-md transition"
+              className="bg-[#F8FAFB] flex flex-col  border-[0.8px] border-[#E5E7EB] p-8 rounded-sm hover:shadow-md transition"
             >
-              {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-[#AD9551] text-sm">
-                    ★
-                  </span>
-                ))}
-              </div>
 
               {/* Quote Mark */}
-              <div className="text-4xl text-[#AD9551] mb-2">"</div>
+              <div className="mb-4">
+                <Image src={quoteIcon} alt="Quote Icon" width={32} height={32} />
+              </div>
 
               {/* Quote */}
               <p className="text-[#1F2933] italic leading-relaxed mb-8 text-sm sm:text-sm">
@@ -70,14 +65,17 @@ export default function TestimonialsSection({
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-9 h-9 bg-[#FAF8F4] rounded-full">
-                  <span className="text-[#AD9451] font-medium text-sm">
-                    {testimonial.initials}
-                  </span>
+              <div className='mt-auto'>
+                 {/* Rating */}
+                <div className="flex gap-1 mb-2">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-[#AD9551] text-sm">
+                      ★
+                    </span>
+                  ))}
                 </div>
                 <div>
-                  <p className="font-medium text-[#1F2933] text-sm">
+                  <p className="font-semibold text-[#1F2933] text-sm mb-0">
                     {testimonial.author}
                   </p>
                   <p className="text-xs text-[#6B7280]">{testimonial.role}</p>

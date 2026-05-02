@@ -7,31 +7,35 @@ import messageIcon from '@/assets/icons/message.svg';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  const ourHomes = [
+    { label: 'Redbricks Care Home', href: '/our-homes/redbricks' },
+    { label: 'Watson House Rest Home', href: '/our-homes/watson-house' },
+    { label: 'Mariners Court Care Home', href: '/our-homes/mariners-court' },
+  ];
+
   const quickLinks = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Our Homes', href: '/our-homes' },
     { label: 'Admissions', href: '/admissions' },
+    { label: 'Referral', href: '/referral' },
     { label: 'Contact', href: '/contact' },
   ];
 
-  const ourHomes = [
-    { label: 'Watson House', href: '/our-homes/watson-house' },
-    { label: 'Redbricks', href: '/our-homes/redbricks' },
-    { label: 'Mariners Court', href: '/our-homes/mariners-court' },
-  ];
-
   const company = [
+    { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Our Homes', href: '/our-homes' },
     { label: 'Admissions', href: '/admissions' },
+    { label: 'Referral', href: '/referral' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
     <footer className="bg-[#342A13] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto md:px-0 px-6 py-12 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           
           {/* Left Section - About */}
           <div>
@@ -41,7 +45,26 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Middle Section - Desktop: Quick Links | Mobile: Our Homes + Company */}
+          {/* Our Homes Section - Desktop Only */}
+          <div className="hidden lg:block">
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-[#FAF8F4] mb-6">
+              Our Homes
+            </h4>
+            <ul className="space-y-3">
+              {ourHomes.map((home) => (
+                <li key={home.label}>
+                  <Link
+                    href={home.href}
+                    className="text-sm text-[#FAF8F4] hover:text-[#AD9551] transition"
+                  >
+                    {home.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Quick Links Section */}
           <div>
             {/* Desktop View */}
             <div className="hidden lg:block">
@@ -81,7 +104,7 @@ export default function Footer() {
               </ul>
 
               <h4 className="text-sm font-semibold uppercase tracking-wide text-[#FAF8F4] mb-4">
-                Company
+                 Quick Links
               </h4>
               <ul className="space-y-2">
                 {company.map((item) => (
@@ -99,7 +122,7 @@ export default function Footer() {
           </div>
 
           {/* Right Section - Contact */}
-          <div className="lg:col-span-1 sm:col-span-2">
+          <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-[#FAF8F4] mb-6">
               Contact Us
             </h4>
@@ -141,7 +164,7 @@ export default function Footer() {
         <div className="border-t-[0.8px] mt-10 border-[#FAF8F4]" />
 
         {/* Bottom Footer */}
-        <div className="px-6 md:px-0 pt-8">
+        <div className="pt-8">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] text-[#FAF8F4]">
             <p>© {currentYear} Terebinth Limited. All rights reserved.</p>
             <p className="text-center sm:text-right">

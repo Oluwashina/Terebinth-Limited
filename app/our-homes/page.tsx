@@ -53,7 +53,7 @@ export default function OurHomesPage() {
             }}
             viewButtonLabel="View Redbricks"
             viewButtonHref="/our-homes/redbricks"
-            bookButtonLabel="Arrange A Visit"
+            bookButtonLabel="Arrange a Visit"
             bookButtonHref="/contact"
             imagePosition="right"
             backgroundColor="bg-[#FFFFFF]"
@@ -78,9 +78,9 @@ export default function OurHomesPage() {
             phone: '01253 341550',
             email: 'watsonhousecare@live.co.uk',
         }}
-        viewButtonLabel="View Watson"
+        viewButtonLabel="View Watson House"
         viewButtonHref="/our-homes/watson-house"
-        bookButtonLabel="Arrange A Visit"
+        bookButtonLabel="Arrange a Visit"
         bookButtonHref="/contact"
         imagePosition="left"
         backgroundColor="bg-[#FAF8F4]"
@@ -106,9 +106,9 @@ export default function OurHomesPage() {
             altPhone: '07960 485280',
             email: 'marinerscourt@terebinthltd.com',
         }}
-            viewButtonLabel="View Mariners"
+            viewButtonLabel="View Mariners Court"
             viewButtonHref="/our-homes/mariners-court"
-            bookButtonLabel="Arrange A Visit"
+            bookButtonLabel="Arrange a Visit"
             bookButtonHref="/contact"
             imagePosition="right"
             backgroundColor="bg-white"

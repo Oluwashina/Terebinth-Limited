@@ -37,7 +37,7 @@ export default function AdmissionStepsSection({
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left - Image */}
-          <div className="relative w-full h-64 sm:h-80 lg:h-150 rounded-[20px] overflow-hidden order-2 lg:order-1">
+          <div className="relative w-full h-64 sm:h-80 lg:h-150 rounded-[20px] overflow-hidden order-1">
             <Image
               src={image}
               alt="Admission process"
@@ -49,7 +49,7 @@ export default function AdmissionStepsSection({
           </div>
 
           {/* Right - Steps */}
-          <div className="order-1 lg:order-2">
+          <div className="order-2">
             {/* Steps List */}
             <div className="space-y-4">
               {steps.map((step, index) => (
