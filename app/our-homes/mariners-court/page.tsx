@@ -39,6 +39,7 @@ import marinersLounge from '@/assets/images/mariners-lounge.jpg';
 import Link from "next/link";
 import FeesAndFundingSection from "@/components/FeesAndFundingSection";
 import feesImage from '@/assets/images/fee_fundingImg.jpg';
+import FeaturedNewsSection from "@/components/FeaturedNewsSection";
 
 
 export default function MarinersCourtPage() {
@@ -157,6 +158,15 @@ export default function MarinersCourtPage() {
             objectPosition="center 25%"
          />
 
+        {/* Featured News Section */}
+          <FeaturedNewsSection
+          label="IN THE NEWS"
+          title="Featured in the Blackpool Gazette"
+          description="Mariners Court Care Home was featured in the Blackpool Gazette for its reopening under new management with a renewed focus on quality care and community connection in Fleetwood. The coverage highlights our commitment to creating a welcoming, well-led home where residents feel supported and families feel involved."
+          buttonLabel="Read More"
+          buttonHref="#"
+        />
+
           <ValuesSection 
             label="Our Values"
             title="Values That Shape our Care"
@@ -174,9 +184,9 @@ export default function MarinersCourtPage() {
           />
 
           {/* Fleetwood's Coastal Community Section */}
-            <section className="bg-[#342A13] py-10 md:py-20 px-4 mx-6 md:mx-0 rounded-lg md:rounded-none border-[1.1px] border-[#E5E7EB] md:border-none">
+            <section className="bg-[#342A13] py-14 md:py-20 px-4 mx-6 md:mx-0 rounded-bl-[100px] rounded-tr-[100px] border-[1.1px] border-[#E5E7EB] md:border-none">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold max-w-md text-[#FAF8F4] mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-bold max-w-md text-[#FAF8F4] mb-4 md:mb-6 leading-tight">
                 In the Heart of Fleetwood's Coastal Community
                 </h2>
                 
@@ -242,7 +252,7 @@ export default function MarinersCourtPage() {
             {/* Right Column */}
             <div className="space-y-6">
                 {/* Our Mission Box */}
-                <div className="bg-[#342A13] rounded-[20px] p-8">
+                <div className="bg-[#342A13] rounded-bl-[70px] rounded-tr-[70px] p-8">
                 <h3 className="text-2xl font-bold text-[#FAF8F4] mb-4">Our Mission</h3>
                 <p className="text-sm md:text-[15px] text-[#FAF8F4] leading-relaxed opacity-90">
                     To provide safe, compassionate and well-led residential care that supports each person as an individual, creating homes where kindness, respect and well-being are part of everyday life.
@@ -414,51 +424,51 @@ export default function MarinersCourtPage() {
           images={[
             {
               src: marinaLoungeArea,
-              label: "Lounge  Area"
+              label: ""
             },
             {
               src: marinaDiningArea,
-              label: "Dining Area"
+              label: ""
             },
             {
               src: marinaKitchen,
-              label: "Kitchen"
+              label: ""
             },
              {
               src: marinaLoungeArea2,
-              label: "Lounge Area"
+              label: ""
             },
             {
               src: marinersLakeView,
-              label: "Lake View From Bedroom"
+              label: ""
             },
             {
               src: marinersGarden,
-              label: "Garden"
+              label: ""
             },
             {
               src: marinersLakeView2,
-              label: "Lake View From Bedroom"
+              label: ""
             },
             {
               src: marinersBedroom,
-              label: "Bedroom"
+              label: ""
             },
             {
               src: marinersKitchen,
-              label: "Kitchen"
+              label: ""
             },
             {
               src: marinersGarden2,
-              label: "Garden"
+              label: ""
             },
             {
               src: marinersLounge,
-              label: "Lounge"
+              label: ""
             },
             {
               src: marinersBedroom2,
-              label: "Bedroom"
+              label: ""
             }
           ]}
           backgroundColor="bg-[#FFFFFF]"

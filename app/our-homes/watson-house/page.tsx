@@ -145,7 +145,7 @@ export default function WatsonHousePage() {
         />
 
           {/* CQC Rating Section */}
-        <section className="bg-[#342A13] py-16 px-4">
+        <section className="bg-[#342A13] py-16 px-4 rounded-tr-[100px] rounded-bl-[100px]">
           <div className="max-w-4xl mx-auto text-center">   
             {/* Heading */}
             <h2 className="text-lg md:text-xl font-bold text-[#FAF8F4] mb-4">CQC Rating: Good</h2>
