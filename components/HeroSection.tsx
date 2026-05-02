@@ -48,7 +48,7 @@ export default function HeroSection({
 
       {/* Content */}
       <div className="relative w-full h-full flex flex-col justify-center md:justify-end md:min-h-screen">
-        <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-16 md:pb-24 pt-24 md:pt-44">
+        <div className="max-w-7xl mx-auto w-full px-4 md:px-0 pb-16 md:pb-24 pt-24 md:pt-44">
           <div className="max-w-2xl">
             {/* Badges */}
             {badges.length > 0 && (

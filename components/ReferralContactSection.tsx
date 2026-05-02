@@ -1,16 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 import Image from 'next/image';
 import phoneIcon from '@/assets/icons/call.svg';
 import emailIcon from '@/assets/icons/message.svg';
 import fileIcon from '@/assets/icons/file.svg';
 
 export default function ReferralContactSection() {
-  useEffect(() => {
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
-  }, []);
 
   const [formData, setFormData] = useState({
     referralName: '',
@@ -39,6 +35,10 @@ export default function ReferralContactSection() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
+      if (file.size > 10 * 1024 * 1024) {
+        setError('File size must be less than 10MB');
+        return;
+      }
       setFormData((prev) => ({
         ...prev,
         fileName: file.name,
@@ -46,15 +46,57 @@ export default function ReferralContactSection() {
     }
   };
 
+  const handleFileInputClick = () => {
+    const fileInput = document.getElementById('file-upload') as HTMLInputElement;
+    fileInput?.click();
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
-    console.log('Submitting referral with data:', formData);
 
-    setTimeout(() => {
-      console.log('Simulated email sending complete');
+    // Map care home values to display names
+    const proposedCareSettingMap: { [key: string]: string } = {
+      redbricks: 'Redbricks Care Home (Thornton-Cleveleys)',
+      watson: 'Watson House Rest Home (Blackpool)',
+      mariners: 'Mariners Court Care Home (Fleetwood)',
+      tbc: 'To be confirmed',
+    };
+
+    const selectedCareSetting = formData.proposedCareSetting 
+      ? proposedCareSettingMap[formData.proposedCareSetting] || formData.proposedCareSetting
+      : 'Not specified';
+
+    const fileInput = document.getElementById('file-upload') as HTMLInputElement;
+    const file = fileInput?.files?.[0];
+
+    if (!file) {
+      setError('Please upload a file');
       setLoading(false);
+      return;
+    }
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('referralName', formData.referralName);
+      formDataToSend.append('organization', formData.organization);
+      formDataToSend.append('contactNumber', formData.contactNumber);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('proposedCareSetting', selectedCareSetting);
+      formDataToSend.append('briefOverview', formData.briefOverview);
+      formDataToSend.append('file', file);
+
+      const response = await fetch('/api/referrals', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to submit referral');
+      }
+
       setSubmitted(true);
       setFormData({
         referralName: '',
@@ -65,8 +107,16 @@ export default function ReferralContactSection() {
         briefOverview: '',
         fileName: '',
       });
+      
+      if (fileInput) fileInput.value = '';
+      
       setTimeout(() => setSubmitted(false), 3000);
-    }, 2000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to submit referral. Please try again.');
+      console.error('Referral submission error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -233,7 +283,7 @@ export default function ReferralContactSection() {
               {/* Brief Overview of Needs */}
               <div>
                 <label className="block text-sm font-medium text-[#1F2933] mb-2">
-                  Brief Overview of Needs
+                  Brief Overview of Needs <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   name="briefOverview"
@@ -242,7 +292,7 @@ export default function ReferralContactSection() {
                   placeholder="Tell us about your inquiry..."
                   rows={4}
                   className="w-full px-4 py-3 border-[0.8px] placeholder:text-[#1F293380] border-[#E5E7EB] rounded-sm focus:outline-none focus:ring focus:ring-[#AD9451] text-sm resize-none"
-                  
+                  required
                 />
               </div>
 
@@ -251,7 +301,10 @@ export default function ReferralContactSection() {
                 <label className="block text-sm font-medium text-[#1F2933] mb-2">
                   Upload Needs Assessment/Care Plan <span className="text-red-500">*</span>
                 </label>
-                <div className="border-2 border-dashed border-[#E5E7EB] rounded-lg p-8 text-center hover:border-[#AD9451] transition">
+                <div 
+                  onClick={handleFileInputClick}
+                  className="border-2 border-dashed border-[#E5E7EB] rounded-lg p-8 text-center hover:border-[#AD9451] transition cursor-pointer bg-[#FAFAFA]"
+                >
                   <div className="mb-3 flex justify-center">
                     <Image src={fileIcon} alt="File Upload Icon" width={30} height={30} />
                   </div>
@@ -267,15 +320,13 @@ export default function ReferralContactSection() {
                     accept=".pdf,.doc,.docx"
                     className="hidden"
                     id="file-upload"
-                    
+                    required
                   />
-                  <label htmlFor="file-upload" className="cursor-pointer">
-                    {formData.fileName && (
-                      <p className="text-sm text-[#AD9451] mt-3 font-medium">
-                        ✓ {formData.fileName}
-                      </p>
-                    )}
-                  </label>
+                  {formData.fileName && (
+                    <p className="text-sm text-[#AD9451] mt-4 font-medium bg-[#FDE8D1] py-2 px-3 rounded inline-block">
+                      ✓ {formData.fileName}
+                    </p>
+                  )}
                 </div>
               </div>
 

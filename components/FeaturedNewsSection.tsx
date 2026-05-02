@@ -28,6 +28,7 @@ export default function FeaturedNewsSection({
             alt="Terebinth Limited Logo"
             fill
             className="object-cover"
+            loading='eager'
           />
         </div>
       </div>
