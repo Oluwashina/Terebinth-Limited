@@ -155,7 +155,7 @@ export default function Home() {
       id: '3',
       quote: '“All the staff have been excellent with my mum during her time at Redbricks. They are very attentive to any health needs but also take her well-being seriously. She also really likes the food!”',
       author: 'Wendy B.',
-      role: 'Son of Resident',
+      role: 'Daughter of Resident',
       initials: 'SO',
       rating: 5,
     },
