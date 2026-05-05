@@ -23,7 +23,7 @@ export default function WWhoWeSupportSection() {
     },
     {
       number: 4,
-      title: 'Local to the Flyde Coast ',
+      title: 'Local to the Fylde Coast ',
       description:
         'Three homes across the Fylde Coast keeping residents close to family and community.',
     },
