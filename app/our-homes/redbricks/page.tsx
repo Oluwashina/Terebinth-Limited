@@ -19,7 +19,7 @@ import ensuiteRoom from '@/assets/images/ensuiteRoom.jpg';
 import redbricks_Img1 from '@/assets/images/redbricks_img1.jpg';
 import redbricks_Img2 from '@/assets/images/redbricks_img2.jpg';
 import redbricks_Img3 from '@/assets/images/redbricks_img3.jpg';
-import redbricksAccomodation from '@/assets/images/redbricks-accomodation.jpg';
+import redbricksAccomodation from '@/assets/images/redbricksimg.jpg';
 import activitiesArea from '@/assets/images/activitiesArea.jpg';
 import mainLoungeArea from '@/assets/images/mainLoungeArea.jpg';
 import DailyLifeSection from "@/components/DailyLifeSection";
