@@ -70,13 +70,13 @@ export default function RedbricksPage() {
         description="A CQC-registered residential care home on Queens Promenade in Thornton-Cleveleys, offering personal care for up to 9 residents. Redbricks Care Home sits on the Fylde Coast at 512 Queens Promenade in Little Bispham, a seafront position. The wider nearby area includes recognisable local landmarks such as Mary's Shell on Cleveleys beach and Marsh Mill in Thornton, which helps place the home in a familiar part of the coast for visiting families."
         buttons={[
           {
-            label: 'Book A Visit',
+            label: 'Arrange a Family Enquiry',
             href: '/contact',
             variant: 'solid',
           },
           {
-            label: 'Speak to Our Team ',
-            href: '/contact',
+            label: 'Make A Professional Referral ',
+            href: '/referral',
             variant: 'outline',
           },
         ]}
