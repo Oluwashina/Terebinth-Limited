@@ -305,7 +305,7 @@ export default function MarinersCourtPage() {
 
         <DailyLifeSection
           label="DAILY LIFE"
-          title="Life at Mariner’s court"
+          title="Life at Mariners court"
           subtitle="We have a variety of stimulating daily entertainment designed to promote wellbeing, social connection and enjoyment."
           cards={[
             {
