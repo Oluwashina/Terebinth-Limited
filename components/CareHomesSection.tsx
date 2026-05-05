@@ -84,7 +84,7 @@ export default function CareHomesSection({ homes }: CareHomesSectionProps) {
                   href={`/our-homes/${home.id}`}
                   className="inline-block bg-[#AD9451] text-white px-10 py-4 rounded-full font-medium text-sm text-center hover:bg-[#8B6D3C] transition w-fit"
                 >
-                  {`View ${home.name.split(' ')[0]}`}
+                  {`View ${home.name.split(' ').slice(0, -2).join(' ')}`}
                 </Link>
               </div>
             </div>

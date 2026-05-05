@@ -164,7 +164,7 @@ export default function MarinersCourtPage() {
           title="Featured in the Blackpool Gazette"
           description="Mariners Court Care Home was featured in the Blackpool Gazette for its reopening under new management with a renewed focus on quality care and community connection in Fleetwood. The coverage highlights our commitment to creating a welcoming, well-led home where residents feel supported and families feel involved."
           buttonLabel="Read More"
-          buttonHref="#"
+          buttonHref="https://www.blackpoolgazette.co.uk/news/seafront-nursing-home-mariners-court-re-opens-in-fleetwood-after-massive-refurbishment-6482310?fbclid=IwdGRzaAQ16n1jbGNrBDXqJWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHg4esP37X9tXYigyRiy2wF9G_nnuLpMHkhRLTcLvHWUl6IQwqDX4HjaP0ZhY_aem_6UeR-2BhsPoMMl6Rgi496w&sfnsn=scwspwa"
         />
 
           <ValuesSection 

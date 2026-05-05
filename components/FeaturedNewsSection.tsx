@@ -15,8 +15,8 @@ export default function FeaturedNewsSection({
   label,
   title,
   description,
-//   buttonLabel = 'Read More',
-//   buttonHref = '#',
+  buttonLabel = 'Read More',
+  buttonHref = '#',
 }: FeaturedNewsSectionProps) {
   return (
     <section className="bg-[#342A13] py-14 md:py-20 px-4 mx-6 md:mx-0 md:rounded-br-[100px] rounded-br-[70px] rounded-tl-[70px] md:rounded-tl-[100px] border-[1.1px] border-[#E5E7EB] md:border-none relative overflow-hidden">
@@ -40,14 +40,16 @@ export default function FeaturedNewsSection({
             <p>{label}</p>
           </div>
 
-          {/* Button */}
-          {/* <Link
+          {/* Button — desktop only */}
+          <Link
             href={buttonHref}
-            className="inline-block bg-[#AD9451] text-white px-8 py-3 rounded-full font-medium text-sm hover:bg-[#8B6D3C] transition"
+            target='_blank'
+            rel='noopener noreferrer'
+            className="hidden md:inline-block bg-[#AD9451] text-white px-8 py-3 rounded-full font-medium text-sm hover:bg-[#8B6D3C] transition"
           >
             {buttonLabel}
             <Image src={arrowRight} alt="Arrow Right" width={14} height={14} className="inline-block ml-2" />
-          </Link> */}
+          </Link>
         </div>
 
         {/* Title */}
@@ -59,6 +61,17 @@ export default function FeaturedNewsSection({
         <p className="text-[#FAF8F4] text-sm md:text-base max-w-5xl leading-relaxed mb-8">
           {description}
         </p>
+
+        {/* Button — mobile only */}
+        <Link
+          href={buttonHref}
+          target='_blank'
+          rel='noopener noreferrer'
+          className="md:hidden inline-block bg-[#AD9451] text-white px-8 py-3 rounded-full font-medium text-sm hover:bg-[#8B6D3C] transition"
+        >
+          {buttonLabel}
+          <Image src={arrowRight} alt="Arrow Right" width={14} height={14} className="inline-block ml-2" />
+        </Link>
       </div>
     </section>
   );

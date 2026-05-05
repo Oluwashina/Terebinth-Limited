@@ -286,7 +286,7 @@ export default function WatsonHousePage() {
                 postcode: "FY4 1EU"
             }}
             phone="01253 341550"
-            email="enquiries@terebinthltd.com"
+            email="watsonhousecare@live.co.uk"
             visitExpectation="When you arrange a visit, you'll have the opportunity to tour the home, meet our team, and discuss your specific care needs in detail. We'll take the time to answer all your questions and help you understand how we can support you or your loved one."
             buttonLabel="Discuss Care Needs"
             buttonHref="/contact"
