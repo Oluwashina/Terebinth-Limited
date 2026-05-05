@@ -201,7 +201,7 @@ export default function WatsonHousePage() {
          
          <DailyLifeSection
           label="DAILY LIFE"
-          title="Life at Watson House Rest Home"
+          title="Life at Watson House"
           subtitle="We create a daily routine that balances structure with flexibility, respecting individual preferences while encouraging social connection and meaningful activity."
           cards={[
             {
